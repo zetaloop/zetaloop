@@ -1,5 +1,6 @@
-### Hi there 👋
+[![Zetaspace's github stats](https://github-readme-stats.vercel.app/api?username=ideaploter&show_icons=true&icon_color=586069&title_color=ff8000)](https://github.com/anuraghazra/github-readme-stats)
 
+[![PCTMOD](https://github-readme-stats.vercel.app/api/pin/?username=ideaploter&repo=PowerToys-Chinese-TransMOD&show_icons=true&title_color=ff8000)](https://github.com/IdeaPloter/PowerToys-Chinese-TransMOD)
 <!--
 **IdeaPloter/IdeaPloter** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -14,3 +15,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+- 🎨 Working on ZhS Trans of:: PowerToys; GithubDesktop...
+- 🪐 [Zetaspace](https://xn--rxa.space) the Website
+- 🐾 Fun fact: ... a hidden furry!
