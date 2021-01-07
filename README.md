@@ -17,5 +17,6 @@ Here are some ideas to get you started:
 -->
 
 - 🎨 Working on ZhS Trans of:: PowerToys; GithubDesktop...
+- 🍤 Also some little tools...
 - 🪐 [Zetaspace](https://xn--rxa.space) the Website
 - 🐾 Fun fact: ... a hidden furry!
