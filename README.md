@@ -1,6 +1,9 @@
 [![Zetaspace's github stats](https://github-readme-stats.vercel.app/api?username=zetasp&show_icons=true&icon_color=586069&title_color=ff8000)](https://github.com/anuraghazra/github-readme-stats)
 
 [![PCTMOD](https://github-readme-stats.vercel.app/api/pin/?username=zetasp&repo=PowerToys-Chinese-TransMOD&show_icons=true&title_color=ff8000)](https://github.com/ZetaSp/PowerToys-Chinese-TransMOD)
+
+[![ExplorerPatcher](https://github-readme-stats.vercel.app/api/pin/?username=zetasp&repo=ExplorerPatcher&show_icons=true&title_color=ff8000)](https://github.com/ZetaSp/ExplorerPatcher)
+
 <!--
 **ZetaSp/ZetaSp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
