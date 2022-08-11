@@ -2,6 +2,7 @@
 
 [![PCTMOD](https://github-readme-stats.vercel.app/api/pin/?username=zetasp&repo=PowerToys-Chinese-TransMOD&show_icons=true&title_color=ff8000)](https://github.com/ZetaSp/PowerToys-Chinese-TransMOD)
 [![ExplorerPatcher](https://github-readme-stats.vercel.app/api/pin/?username=zetasp&repo=ExplorerPatcher&show_icons=true&title_color=ff8000)](https://github.com/ZetaSp/ExplorerPatcher)
+[![HourGlass](https://github-readme-stats.vercel.app/api/pin/?username=zetasp&repo=hourglass&show_icons=true&title_color=ff8000)](https://github.com/ZetaSp/hourglass)
 
 <!--
 **ZetaSp/ZetaSp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -18,6 +19,11 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 📑 Working on some ZhS Trans...
-- 💻 Also some little tools...
-- 🪐 [Zetaspace](https://xn--rxa.space) the Website
+- 📎 This is Zetaspace!!!
+- ⚙️ I'm working on some custom translations.
+- 🎚️ And some scripts & tools.
+- 🛸 [ζ.space](https://xn--rxa.space) my website (under construction).
+- ✉️ [zetaspace@outlook.com](mailto:zetaspace@outlook.com) email.
+- 🌱 [Zetaspace](https://space.bilibili.com/99583527) bilibili.
+- ☢️ I mainly use Python now, but I'll learn everything interesting.
+- 🐱 Feel free to chat with me!
