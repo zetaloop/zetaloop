@@ -3,6 +3,7 @@
 [![PCTMOD](https://github-readme-stats.vercel.app/api/pin/?username=zetasp&repo=PowerToys-Chinese-TransMOD&show_icons=true&title_color=ff8000)](https://github.com/ZetaSp/PowerToys-Chinese-TransMOD)
 [![ExplorerPatcher](https://github-readme-stats.vercel.app/api/pin/?username=zetasp&repo=ExplorerPatcher&show_icons=true&title_color=ff8000)](https://github.com/ZetaSp/ExplorerPatcher)
 [![HourGlass](https://github-readme-stats.vercel.app/api/pin/?username=zetasp&repo=hourglass&show_icons=true&title_color=ff8000)](https://github.com/ZetaSp/hourglass)
+[![Textify](https://github-readme-stats.vercel.app/api/pin/?username=zetasp&repo=Textify&show_icons=true&title_color=ff8000)](https://github.com/ZetaSp/Textify)
 
 <!--
 **ZetaSp/ZetaSp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
