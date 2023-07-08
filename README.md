@@ -22,8 +22,8 @@ Here are some ideas to get you started:
 - This is zetaloop!!!
 - I'm working on some custom translations.
 - And some scripts & tools.
-- [ζ.space](https://xn--rxa.space) my website (under construction) (maybe will change).
-- [zetaspace@outlook.com](mailto:zetaspace@outlook.com) email.
+- [loop.build](https://loop.build) my website (comming soon)。
+- [zetaloop@outlook.com](mailto:zetaloop@outlook.com) email.
 - [zetaloop](https://space.bilibili.com/99583527) bilibili.
 - I mainly use Python now, but I'm learning everything interesting.
 - Feel free to chat with me!
