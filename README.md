@@ -1,6 +1,6 @@
 
 <p align="left">
-  <img height="200" src="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true&include_all_commits=true" />
+  <img height="200" src="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true" />
   <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zetaloop&show_icons=true&layout=compact" />
 </p>
 
