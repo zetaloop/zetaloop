@@ -8,12 +8,12 @@
 </p>
 
 
-![Static Badge](https://img.shields.io/badge/NBU-x?style=for-the-badge&logo=bookstack&logoColor=white&color=cf3a1c)
-![Static Badge](https://img.shields.io/badge/Python-gray?style=for-the-badge&logo=python&logoColor=white&color=5175a6)
-![Static Badge](https://img.shields.io/badge/L10N-x?style=for-the-badge&logo=googletranslate&logoColor=white&color=4285F4)
-![Static Badge](https://img.shields.io/badge/OpenSource-x?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=3DA639)
-![Static Badge](https://img.shields.io/badge/Hardware-x?style=for-the-badge&logo=raspberrypi&logoColor=white&color=A22846)
-![Static Badge](https://img.shields.io/badge/Meow-x?style=for-the-badge&logo=furrynetwork&logoColor=white&color=2E75B4)
+[![Static Badge](https://img.shields.io/badge/NBU-x?style=for-the-badge&logo=bookstack&logoColor=white&color=cf3a1c)](https://www.nbu.edu.cn/en/)
+[![Static Badge](https://img.shields.io/badge/Python-gray?style=for-the-badge&logo=python&logoColor=white&color=5175a6)](https://python.org)
+[![Static Badge](https://img.shields.io/badge/L10N-x?style=for-the-badge&logo=googletranslate&logoColor=white&color=4285F4)](https://translate.google.com/?sl=en&tl=zh-CN&text=lol)
+[![Static Badge](https://img.shields.io/badge/OpenSource-x?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=3DA639)](https://github.com)
+[![Static Badge](https://img.shields.io/badge/Hardware-x?style=for-the-badge&logo=raspberrypi&logoColor=white&color=A22846)](https://raspberrypi.com/)
+[![Static Badge](https://img.shields.io/badge/Meow-x?style=for-the-badge&logo=furrynetwork&logoColor=white&color=2E75B4)](ai-generated.png)
 
 
 ### Welcome to Zetaloop 🐱
@@ -24,4 +24,4 @@
 - Blog: [loop.build](https://loop.build) _[COMMING SOON]_
 - Email: [zetaloop@outlook.com](mailto:zetaloop@outlook.com)
 - Bilibili: [zetaloop](https://space.bilibili.com/99583527)
-- Feel free to chat with me!
+- Feel free to chat with me!!
