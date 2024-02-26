@@ -3,8 +3,8 @@
 </p>
 
 <p align="left">
-  <img height="150" src="https://streak-stats.demolab.com/?user=zetaloop&theme=transparent&mode=weekly&ring=7194E9&sideNums=464D57&fire=7194E9&sideLabels=5680E5&currStreakNum=464D57&currStreakLabel=5680E5&dates=464D57" />
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true&bg_color=0000&include_all_commits=true" />
+  <img height="160" src="https://streak-stats.demolab.com/?user=zetaloop&theme=transparent&mode=weekly&ring=7194E9&sideNums=464D57&fire=7194E9&sideLabels=5680E5&currStreakNum=464D57&currStreakLabel=5680E5&dates=464D57" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true&bg_color=0000&include_all_commits=true" />
 </p>
 
 
