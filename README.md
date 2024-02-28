@@ -1,5 +1,5 @@
 <p align="left">
-  <img width="256" src="https://github.com/zetaloop/zetaloop/assets/36418285/82bc087d-d373-434d-9658-18c67b593961" />
+  <img width="400" src="https://github.com/zetaloop/zetaloop/assets/36418285/d608368a-cdcb-4b08-9bd0-2445131eeea0" />
 </p>
 
 <p align="left">
@@ -10,7 +10,6 @@
     <img height="160" src="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true&bg_color=0000&include_all_commits=true" />
   </a>
 </p>
-
 
 [![Static Badge](https://img.shields.io/badge/NBU-x?style=for-the-badge&logo=bookstack&logoColor=white&color=cf3a1c)](https://www.nbu.edu.cn/en/)
 [![Static Badge](https://img.shields.io/badge/Python-gray?style=for-the-badge&logo=python&logoColor=white&color=5175a6)](https://python.org)
