@@ -1,13 +1,34 @@
 <p align="left">
-  <img width="500" src="https://github.com/zetaloop/zetaloop/assets/36418285/a1fa05cc-e3e0-4729-bef6-53083571f615" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/zetaloop/zetaloop/assets/36418285/730d71b8-ea10-4045-a084-1741320d0a08">
+    <img width="500" src="https://github.com/zetaloop/zetaloop/assets/36418285/0a3c13d8-79e5-455a-9941-3435935d523b" />
+  </picture>
 </p>
 
 <p align="left">
-  <a href="https://github-readme-stats.vercel.app">
-    <img height="160" src="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true&theme=transparent" />
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true&theme=dark&hide_border=true">
+      <img height="160" src="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true" />
+    </picture>
   </a>
-  <a href="https://streak-stats.demolab.com">
-    <img height="160" src="https://streak-stats.demolab.com/?user=zetaloop&theme=transparent&mode=weekly" />
+  <a href="https://just-a-blank">
+    <img width="10" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAANSURBVBhXY2BgYGAAAAAFAAGKM+MAAAAAAElFTkSuQmCC" />
+  </a>
+  <a href="https://github.com/denvercoder1/github-readme-streak-stats">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=zetaloop&mode=weekly&theme=dark&hide_border=true">
+      <img height="160" src="https://streak-stats.demolab.com/?user=zetaloop&mode=weekly" />
+    </picture>
+  </a>
+</p>
+
+<p align="left">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=zetaloop&theme=darkhub&no-frame=true&row=1&column=6&margin-w=15">
+      <img width="820" src="https://github-profile-trophy.vercel.app/?username=zetaloop&no-frame=true&row=1&column=6&margin-w=15" />
+    </picture>
   </a>
 </p>
 
