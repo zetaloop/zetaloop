@@ -5,31 +5,31 @@
   </picture>
 </p>
 
-<p align="left">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true&theme=dark&hide_border=true">
-      <img height="160" src="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true" />
-    </picture>
-  </a>
-  <a href="https://just-a-blank">
-    <img width="10" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAANSURBVBhXY2BgYGAAAAAFAAGKM+MAAAAAAElFTkSuQmCC" />
-  </a>
-  <a href="https://github.com/denvercoder1/github-readme-streak-stats">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=zetaloop&mode=weekly&theme=dark&hide_border=true">
-      <img height="160" src="https://streak-stats.demolab.com/?user=zetaloop&mode=weekly" />
-    </picture>
-  </a>
-</p>
-
-<p align="left">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=zetaloop&theme=darkhub&no-frame=true&row=1&column=6&margin-w=15">
-      <img width="820" src="https://github-profile-trophy.vercel.app/?username=zetaloop&no-frame=true&row=1&column=6&margin-w=15" />
-    </picture>
-  </a>
+<p align="center" width="100%"><table><tbody>
+  <tr>
+    <td><a href="https://github.com/anuraghazra/github-readme-stats">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true&theme=dark&hide_border=true&bg_color=00000000">
+        <img height="100%" src="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true&hide_border=true&bg_color=00000000" />
+      </picture>
+    </a></td>
+    <td><a href="https://github.com/denvercoder1/github-readme-streak-stats">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=zetaloop&mode=weekly&theme=dark&hide_border=true&background=00000000">
+        <img height="100%" src="https://streak-stats.demolab.com/?user=zetaloop&mode=weekly&hide_border=true&background=00000000" />
+      </picture>
+    </a></td>
+  </tr>
+</tbody><tbody>
+  <tr>
+    <td colspan="2"><a href="https://github.com/ryo-ma/github-profile-trophy">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=zetaloop&theme=darkhub&no-bg=true&no-frame=true&row=1&column=6&margin-w=15">
+        <img width="100%" src="https://github-profile-trophy.vercel.app/?username=zetaloop&no-bg=true&no-frame=true&row=1&column=6&margin-w=15" />
+      </picture>
+    </a></td>
+  </tr>
+</tbody></table>
 </p>
 
 [![Static Badge](https://img.shields.io/badge/NBU-x?style=for-the-badge&logo=bookstack&logoColor=white&color=cf3a1c)](https://www.nbu.edu.cn/en/)
