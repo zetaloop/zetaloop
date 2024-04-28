@@ -37,7 +37,7 @@
 [![Static Badge](https://img.shields.io/badge/L10N-x?style=for-the-badge&logo=googletranslate&logoColor=white&color=4285F4)](https://translate.google.com/?sl=en&tl=zh-CN&text=lol)
 [![Static Badge](https://img.shields.io/badge/OpenSource-x?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=3DA639)](https://github.com)
 [![Static Badge](https://img.shields.io/badge/Hardware-x?style=for-the-badge&logo=raspberrypi&logoColor=white&color=A22846)](https://raspberrypi.com/)
-[![Static Badge](https://img.shields.io/badge/Meow-x?style=for-the-badge&logo=furrynetwork&logoColor=white&color=2E75B4)](https://http.cat/images/501.jpg)
+[![Static Badge](https://img.shields.io/badge/Meow-x?style=for-the-badge&logo=furrynetwork&logoColor=white&color=2E75B4)](https://loop.build/about)
 
 
 ### Welcome to Zetaloop 🐱
