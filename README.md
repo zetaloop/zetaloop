@@ -5,7 +5,24 @@
   </picture>
 </p>
 
-<table align="center"><tbody>
+<table align="center">
+  <td colspan="6">
+    <h2><p align="center"><code> Welcome to Zetaloop 🐱</code></p></h2>
+    <p align="center">Passionate about open source contribution and software localization</p>
+    <p align="center">Blog: <a href="https://loop.build"><kbd>🚧 <del>loop.build</del> 🚧</kbd></a></p>
+    <p align="center">Email: <a href="mailto:zetaloop@outlook.com"><kbd>zetaloop@outlook.com</kbd></a></p>
+    <p align="center">Bilibili: <a href="https://space.bilibili.com/99583527"><kbd>zetaloop</kbd></a></p>
+    <p align="center">Feel free to chat with me!!</p>
+    <p align="center">
+      <a href="https://www.nbu.edu.cn/en/"><img src="https://img.shields.io/badge/NBU-x?style=for-the-badge&logo=bookstack&logoColor=white&color=cf3a1c" /></a>
+      <a href="https://python.org"><img src="https://img.shields.io/badge/Python-gray?style=for-the-badge&logo=python&logoColor=white&color=5175a6" /></a>
+      <a href="https://translate.google.com/?sl=en&tl=zh-CN&text=lol"><img src="https://img.shields.io/badge/L10N-x?style=for-the-badge&logo=googletranslate&logoColor=white&color=4285F4" /></a>
+      <a href="https://github.com"><img src="https://img.shields.io/badge/OpenSource-x?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=3DA639" /></a>
+      <a href="https://raspberrypi.com/"><img src="https://img.shields.io/badge/Hardware-x?style=for-the-badge&logo=raspberrypi&logoColor=white&color=A22846" /></a>
+      <a href="https://loop.build/about"><img src="https://img.shields.io/badge/Meow-x?style=for-the-badge&logo=furrynetwork&logoColor=white&color=2E75B4" /></a>
+    </p>
+  </td>
+<tbody>
   <tr>
     <td colspan="3"><a href="https://github.com/anuraghazra/github-readme-stats">
       <picture>
@@ -49,26 +66,5 @@
         <img width="100%" src="https://github-profile-trophy.vercel.app/?username=zetaloop&no-bg=true&no-frame=true&row=1&column=6&margin-w=15" />
       </picture>
     </a></td>
-  </tr>
-</tbody></table>
-<table align="center"><tbody>
-  <tr>
-    <td colspan="4">
-      <h3><p align="center">Welcome to Zetaloop 🐱</p></h3>
-      <li>Passionate about open source contribution and software l10n</li>
-      <li>Love Python</li>
-      <li>Blog: <a href="https://loop.build">loop.build</a> <i>[COMMING SOON]</i></li>
-      <li>Email: <a href="mailto:zetaloop@outlook.com">zetaloop@outlook.com</a></li>
-      <li>Bilibili: <a href="https://space.bilibili.com/99583527">zetaloop</a></li>
-      <li>Feel free to chat with me!!</li>
-      <br />
-      <a href="https://www.nbu.edu.cn/en/"><img src="https://img.shields.io/badge/NBU-x?style=for-the-badge&logo=bookstack&logoColor=white&color=cf3a1c" /></a>
-      <a href="https://python.org"><img src="https://img.shields.io/badge/Python-gray?style=for-the-badge&logo=python&logoColor=white&color=5175a6" /></a>
-      <a href="https://translate.google.com/?sl=en&tl=zh-CN&text=lol"><img src="https://img.shields.io/badge/L10N-x?style=for-the-badge&logo=googletranslate&logoColor=white&color=4285F4" /></a>
-      <a href="https://github.com"><img src="https://img.shields.io/badge/OpenSource-x?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=3DA639" /></a>
-      <a href="https://raspberrypi.com/"><img src="https://img.shields.io/badge/Hardware-x?style=for-the-badge&logo=raspberrypi&logoColor=white&color=A22846" /></a>
-      <a href="https://loop.build/about"><img src="https://img.shields.io/badge/Meow-x?style=for-the-badge&logo=furrynetwork&logoColor=white&color=2E75B4" /></a>
-      <br /><br />
-    </td>
   </tr>
 </tbody></table>
