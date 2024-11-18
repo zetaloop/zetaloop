@@ -27,8 +27,8 @@
   <tr>
     <td colspan="3"><a href="https://github.com/anuraghazra/github-readme-stats">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true&theme=dark&hide_border=true&bg_color=00000000&number_format=long">
-        <img height="100%" src="https://github-readme-stats.vercel.app/api?username=zetaloop&show_icons=true&hide_border=true&bg_color=00000000&number_format=long" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-mirror.vercel.app/api?username=zetaloop&show_icons=true&theme=dark&hide_border=true&bg_color=00000000&number_format=long">
+        <img height="100%" src="https://github-readme-stats-mirror.vercel.app/api?username=zetaloop&show_icons=true&hide_border=true&bg_color=00000000&number_format=long" />
       </picture>
     </a></td>
     <td colspan="3"><a href="https://github.com/denvercoder1/github-readme-streak-stats">
