@@ -8,7 +8,7 @@
 <table align="center">
   <td colspan="6">
     <h2><p align="center"><code> Welcome to Zetaloop 🐱</code></p></h2>
-    <p align="center">Passionate about open source contribution and software localization</p>
+    <p align="center">Open source contributor and software localization enthusiast</p>
     <p align="center">Blog: <a href="https://loop.build"><kbd>🚧 <del>loop.build</del> 🚧</kbd></a></p>
     <p align="center">Email: <a href="mailto:zetaloop@outlook.com"><kbd>zetaloop@outlook.com</kbd></a></p>
     <p align="center">Bluesky: <a href="https://bsky.app/profile/loop.build"><kbd>@loop.build</kbd></a></p>
