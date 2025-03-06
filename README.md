@@ -7,13 +7,15 @@
 
 <table align="center">
   <td colspan="6">
-    <h2><p align="center"><code> Welcome to Zetaloop 🐱</code></p></h2>
-    <p align="center">Open source contributor and software localization enthusiast</p>
+    <h2><p align="center"><code>✨ Welcome to Zetaloop 🦊</code></p></h2>
+    <p align="center">Just another fox translating software, building (and breaking) things for fun~</p>
+    <p align="center">Feel free to interrupt me with literally anything!</p>
+    <p align="center">某只汉化软件和自动拆家的可爱小狐狸</p>
+    <p align="center">我不吃人，欢迎随便戳我聊聊</p>
     <p align="center">Blog: <a href="https://loop.build"><kbd>🚧 <del>loop.build</del> 🚧</kbd></a></p>
-    <p align="center">Email: <a href="mailto:zetaloop@outlook.com"><kbd>zetaloop@outlook.com</kbd></a></p>
+    <p align="center">Mail: <a href="mailto:zetaloop@outlook.com"><kbd>zetaloop@outlook.com</kbd></a></p>
     <p align="center">Bluesky: <a href="https://bsky.app/profile/loop.build"><kbd>@loop.build</kbd></a></p>
     <p align="center">Bilibili: <a href="https://space.bilibili.com/99583527"><kbd>zetaloop</kbd></a></p>
-    <p align="center">Feel free to chat with me!!</p>
     <p align="center">
       <a href="https://www.nbu.edu.cn/en/"><img src="https://img.shields.io/badge/NBU-x?style=for-the-badge&logo=bookstack&logoColor=white&color=CF3A1C" /></a>
       <a href="https://python.org"><img src="https://img.shields.io/badge/Python-gray?style=for-the-badge&logo=python&logoColor=white&color=3572A5" /></a>
