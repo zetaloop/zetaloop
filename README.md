@@ -7,21 +7,18 @@
 
 <table align="center">
   <td colspan="6">
-    <h2><p align="center"><code>✨ Welcome to Zetaloop 🦊</code></p></h2>
+    <h2><p align="center"><code>✨Welcome to Zetaloop🦊</code></p></h2>
     <p align="center">Just another fox translating software, building (and breaking) things for fun~</p>
     <p align="center">Feel free to interrupt me with literally anything!</p>
     <p align="center">某只汉化软件和自动拆家的可爱小狐狸</p>
     <p align="center">我不吃人，欢迎随便戳我聊聊</p>
-    <p align="center">Blog: <a href="https://loop.build"><kbd>🚧 <del>loop.build</del> 🚧</kbd></a></p>
-    <p align="center">Mail: <a href="mailto:zetaloop@outlook.com"><kbd>zetaloop@outlook.com</kbd></a></p>
-    <p align="center">Bluesky: <a href="https://bsky.app/profile/loop.build"><kbd>@loop.build</kbd></a></p>
-    <p align="center">Bilibili: <a href="https://space.bilibili.com/99583527"><kbd>zetaloop</kbd></a></p>
+    <p align="center"><a href="https://loop.build"><kbd>Blog: 🚧<del>loop.build</del>🚧</kbd></a> <a href="mailto:zetaloop@outlook.com"><kbd>Mail: zetaloop@outlook.com</kbd></a></p>
+    <p align="center"><a href="https://x.com/zetaloop"><kbd>X: zetaloop</kbd></a> <a href="https://bsky.app/profile/loop.build"><kbd>Bluesky: loop.build</kbd></a> <a href="https://space.bilibili.com/99583527"><kbd>Bilibili: zetaloop</kbd></a></p>
     <p align="center">
-      <a href="https://www.nbu.edu.cn/en/"><img src="https://img.shields.io/badge/NBU-x?style=for-the-badge&logo=bookstack&logoColor=white&color=CF3A1C" /></a>
+      <a href="https://github.com"><img src="https://img.shields.io/badge/OpenSource-x?style=for-the-badge&logo=opencollective&logoColor=white&color=2D9629" /></a>
       <a href="https://python.org"><img src="https://img.shields.io/badge/Python-gray?style=for-the-badge&logo=python&logoColor=white&color=3572A5" /></a>
       <a href="https://chatgpt.com/"><img src="https://img.shields.io/badge/L10n-x?style=for-the-badge&logo=googletranslate&logoColor=white&color=7159C1" /></a>
       <a href="https://hackaday.com/"><img src="https://img.shields.io/badge/Hacks-x?style=for-the-badge&logo=hackaday&logoColor=white&color=B23856" /></a>
-      <a href="https://github.com"><img src="https://img.shields.io/badge/OpenSource-x?style=for-the-badge&logo=opencollective&logoColor=white&color=2D9629" /></a>
       <a href="https://loop.build/about"><img src="https://img.shields.io/badge/Cute-x?style=for-the-badge&logo=furrynetwork&logoColor=white&color=EB7C00" /></a>
     </p>
   </td>
