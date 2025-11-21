@@ -1,10 +1,10 @@
-<p align="center">
+<!-- <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/zetaloop/zetaloop/assets/36418285/730d71b8-ea10-4045-a084-1741320d0a08">
     <img width="500" src="https://github.com/zetaloop/zetaloop/assets/36418285/0a3c13d8-79e5-455a-9941-3435935d523b" />
   </picture>
 </p>
-
+ -->
 <table align="center">
   <td colspan="6">
     <h2><p align="center"><code>✨Welcome to Zetaloop🦊</code></p></h2>
