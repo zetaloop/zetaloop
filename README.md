@@ -1,19 +1,11 @@
-<!-- <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/zetaloop/zetaloop/assets/36418285/730d71b8-ea10-4045-a084-1741320d0a08">
-    <img width="500" src="https://github.com/zetaloop/zetaloop/assets/36418285/0a3c13d8-79e5-455a-9941-3435935d523b" />
-  </picture>
-</p>
- -->
 <table align="center">
   <td colspan="6">
-    <h2><p align="center"><code>✨Welcome to Zetaloop🦊</code></p></h2>
-    <p align="center">Just another fox building and breaking things for fun~</p>
-    <p align="center">Feel free to interrupt me with literally anything!</p>
-    <p align="center">某只编写代码自动拆家的可爱小狐狸</p>
-    <p align="center">随时欢迎戳我聊聊</p>
-    <p align="center"><a href="https://loop.build"><kbd>Blog: 🚧<del>loop.build</del>🚧</kbd></a> <a href="mailto:zetaloop@outlook.com"><kbd>Mail: zetaloop@outlook.com</kbd></a></p>
-    <p align="center"><a href="https://x.com/zetaloop"><kbd>X: zetaloop</kbd></a> <a href="https://bsky.app/profile/loop.build"><kbd>Bluesky: loop.build</kbd></a> <a href="https://space.bilibili.com/99583527"><kbd>Bilibili: zetaloop</kbd></a></p>
+    <h3><p align="center"><code>✨Welcome to Zetaloop🦊</code></p></h3>
+    <p align="center">Some random fox chasing fun and breaking things.</p>
+    <p align="center">Feel free to interrupt me ;3</p>
+    <p align="center">热衷于研究一些不太规矩的东西</p>
+    <p align="center">可爱小狐狸出没，欢迎来戳</p>
+    <p align="center"><a href="https://loop.build"><kbd>Site/🚧<del>loop.build</del>🚧</kbd></a> <a href="mailto:zetaloop@outlook.com"><kbd>zetaloop@outlook.com</kbd></a> <a href="https://x.com/zetaloop"><kbd>X/zetaloop</kbd></a> <a href="https://space.bilibili.com/99583527"><kbd>Bili/zetaloop</kbd></a></p>
     <p align="center">
       <a href="https://github.com"><img src="https://img.shields.io/badge/OpenSource-x?style=for-the-badge&logo=opencollective&logoColor=white&color=2D9629" /></a>
       <a href="https://python.org"><img src="https://img.shields.io/badge/Python-x?style=for-the-badge&logo=python&logoColor=white&color=3776AB" /></a>
@@ -42,20 +34,20 @@
   <tr>
     <td colspan="2"><a href="https://github-profile-summary-cards-mirror.vercel.app/demo.html">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="http://github-profile-summary-cards-mirror.vercel.app/api/cards/repos-per-language?username=zetaloop&theme=nord_dark&border_color=0000&bg_color=0000">
-        <img height="100%" src="http://github-profile-summary-cards-mirror.vercel.app/api/cards/repos-per-language?username=zetaloop&theme=nord_bright&border_color=0000&bg_color=0000" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards-mirror.vercel.app/api/cards/repos-per-language?username=zetaloop&theme=nord_dark&border_color=0000&bg_color=0000">
+        <img height="100%" src="https://github-profile-summary-cards-mirror.vercel.app/api/cards/repos-per-language?username=zetaloop&theme=nord_bright&border_color=0000&bg_color=0000" />
       </picture>
     </a></td>
     <td colspan="2"><a href="https://github-profile-summary-cards-mirror.vercel.app/demo.html">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="http://github-profile-summary-cards-mirror.vercel.app/api/cards/most-commit-language?username=zetaloop&theme=nord_dark&border_color=0000&bg_color=0000">
-        <img height="100%" src="http://github-profile-summary-cards-mirror.vercel.app/api/cards/most-commit-language?username=zetaloop&theme=nord_bright&border_color=0000&bg_color=0000" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards-mirror.vercel.app/api/cards/most-commit-language?username=zetaloop&theme=nord_dark&border_color=0000&bg_color=0000">
+        <img height="100%" src="https://github-profile-summary-cards-mirror.vercel.app/api/cards/most-commit-language?username=zetaloop&theme=nord_bright&border_color=0000&bg_color=0000" />
       </picture>
     </a></td>
     <td colspan="2"><a href="https://github-profile-summary-cards-mirror.vercel.app/demo.html">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="http://github-profile-summary-cards-mirror.vercel.app/api/cards/productive-time?username=zetaloop&utcOffset=8&theme=nord_dark&border_color=0000&bg_color=0000">
-        <img height="100%" src="http://github-profile-summary-cards-mirror.vercel.app/api/cards/productive-time?username=zetaloop&utcOffset=8&theme=nord_bright&border_color=0000&bg_color=0000" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards-mirror.vercel.app/api/cards/productive-time?username=zetaloop&utcOffset=8&theme=nord_dark&border_color=0000&bg_color=0000">
+        <img height="100%" src="https://github-profile-summary-cards-mirror.vercel.app/api/cards/productive-time?username=zetaloop&utcOffset=8&theme=nord_bright&border_color=0000&bg_color=0000" />
       </picture>
     </a></td>
   </tr>
