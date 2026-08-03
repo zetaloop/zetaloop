@@ -1,0 +1,22 @@
+{
+    "version": "2.55.0.windows.3",
+    "description": "Chinese language pack for Git for Windows",
+    "homepage": "https://github.com/zkl2333/git-for-windows-zh",
+    "license": "MIT",
+    "depends": "main/git",
+    "url": "https://github.com/zkl2333/git-for-windows-zh/releases/download/v2.55.0.windows.3/build-2.55.0.windows.3.zip",
+    "hash": "e9d665ca5d4e65e1d910f75a2cdba4d521d322ed4138de1bd7a5076e266c23b0",
+    "env_set": {
+        "GIT_TEXTDOMAINDIR": "$dir\\mingw64\\share\\locale",
+        "GITK_MSGSDIR": "$dir\\mingw64\\share\\gitk\\lib\\msgs"
+    },
+    "notes": "别忘了将 LANG 环境变量设置为 zh_CN.UTF-8。",
+    "checkver": {
+        "url": "https://api.github.com/repos/zkl2333/git-for-windows-zh/releases",
+        "jsonpath": "$[*].tag_name",
+        "regex": "v([\\d.]+windows\\.\\d+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/zkl2333/git-for-windows-zh/releases/download/v$version/build-$version.zip"
+    }
+}
