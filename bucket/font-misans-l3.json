@@ -1,0 +1,21 @@
+{
+    "version": "1.000",
+    "description": "MiSans GB 18030-2022 Level 3 rare-character font",
+    "homepage": "https://hyperos.mi.com/font/rare-word/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://hyperos.mi.com/font/"
+    },
+    "url": "https://hyperos.mi.com/font-download/MiSans_L3.zip",
+    "hash": "467fe0171ec9ea21d925aba9c032b1a775a3e756c458f075e7a2ee57568b0c79",
+    "extract_dir": "MiSans L3",
+    "installer": {
+        "script": [
+            "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
+            "& \"$dir\\install-fonts.ps1\" install"
+        ]
+    },
+    "uninstaller": {
+        "script": "& \"$dir\\install-fonts.ps1\" uninstall"
+    }
+}

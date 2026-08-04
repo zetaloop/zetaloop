@@ -1,0 +1,23 @@
+{
+    "version": "7.9",
+    "description": "Rounded monospace font with Nerd Font icons and Chinese glyphs",
+    "homepage": "https://font.subf.dev/",
+    "license": "OFL-1.1",
+    "url": "https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-NF-CN.zip",
+    "hash": "af913b6322905348b3f50e4397fedc35b3a880db5effcce7969003051dcd3e94",
+    "installer": {
+        "script": [
+            "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
+            "& \"$dir\\install-fonts.ps1\" install"
+        ]
+    },
+    "uninstaller": {
+        "script": "& \"$dir\\install-fonts.ps1\" uninstall"
+    },
+    "checkver": {
+        "github": "https://github.com/subframe7536/maple-font"
+    },
+    "autoupdate": {
+        "url": "https://github.com/subframe7536/maple-font/releases/download/v$version/MapleMono-NF-CN.zip"
+    }
+}

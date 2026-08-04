@@ -1,0 +1,33 @@
+{
+    "version": "73086f05f20695bb8ea7e607781dc6ffe316fdbc",
+    "description": "Minimalist sans-serif variable font",
+    "homepage": "https://fonts.google.com/specimen/Mulish",
+    "license": "OFL-1.1",
+    "url": [
+        "https://raw.githubusercontent.com/google/fonts/73086f05f20695bb8ea7e607781dc6ffe316fdbc/ofl/mulish/Mulish%5Bwght%5D.ttf#/Mulish.ttf",
+        "https://raw.githubusercontent.com/google/fonts/73086f05f20695bb8ea7e607781dc6ffe316fdbc/ofl/mulish/Mulish-Italic%5Bwght%5D.ttf#/Mulish-Italic.ttf"
+    ],
+    "hash": [
+        "00f1105796291a2fdda117a0fc7f25d8e68f8010cdbb34a411f60b3bd57717ac",
+        "4f4d5f97b530500232d9d487101b8283840168dcfe7b8b9a285af65f0fa8aaab"
+    ],
+    "installer": {
+        "script": [
+            "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
+            "& \"$dir\\install-fonts.ps1\" install"
+        ]
+    },
+    "uninstaller": {
+        "script": "& \"$dir\\install-fonts.ps1\" uninstall"
+    },
+    "checkver": {
+        "url": "https://api.github.com/repos/google/fonts/commits?path=ofl%2Fmulish%2FMulish%5Bwght%5D.ttf&per_page=1",
+        "jsonpath": "$[0].sha"
+    },
+    "autoupdate": {
+        "url": [
+            "https://raw.githubusercontent.com/google/fonts/$version/ofl/mulish/Mulish%5Bwght%5D.ttf#/Mulish.ttf",
+            "https://raw.githubusercontent.com/google/fonts/$version/ofl/mulish/Mulish-Italic%5Bwght%5D.ttf#/Mulish-Italic.ttf"
+        ]
+    }
+}

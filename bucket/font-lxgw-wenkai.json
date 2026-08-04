@@ -1,0 +1,21 @@
+{
+    "version": "1.522",
+    "description": "LXGW WenKai Chinese handwriting font family",
+    "homepage": "https://github.com/lxgw/LxgwWenKai",
+    "license": "OFL-1.1",
+    "url": "https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/lxgw-wenkai-v1.522.zip",
+    "hash": "3b596205423d838ccd0965bfa2c7e8b6ebcb9d9284e1809e234ad1d5f441adef",
+    "installer": {
+        "script": [
+            "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
+            "& \"$dir\\install-fonts.ps1\" install"
+        ]
+    },
+    "uninstaller": {
+        "script": "& \"$dir\\install-fonts.ps1\" uninstall"
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/lxgw/LxgwWenKai/releases/download/v$version/lxgw-wenkai-v$version.zip"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "version": "1.400",
+    "description": "Expressive variable type superfamily for code",
+    "homepage": "https://monaspace.githubnext.com/",
+    "license": "OFL-1.1",
+    "url": "https://github.com/githubnext/monaspace/releases/download/v1.400/monaspace-variable-v1.400.zip",
+    "hash": "b69a7f2a3c455c89dcb6cc23b61bb3fb8beecba728ccdebeccd80577e58de0c8",
+    "installer": {
+        "script": [
+            "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
+            "& \"$dir\\install-fonts.ps1\" install"
+        ]
+    },
+    "uninstaller": {
+        "script": "& \"$dir\\install-fonts.ps1\" uninstall"
+    },
+    "checkver": {
+        "github": "https://github.com/githubnext/monaspace"
+    },
+    "autoupdate": {
+        "url": "https://github.com/githubnext/monaspace/releases/download/v$version/monaspace-variable-v$version.zip"
+    }
+}

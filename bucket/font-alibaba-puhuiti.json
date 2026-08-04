@@ -1,0 +1,25 @@
+{
+    "version": "3.0",
+    "description": "Alibaba PuHuiTi Chinese sans-serif font family",
+    "homepage": "https://www.alibabafonts.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.alibabafonts.com/"
+    },
+    "url": "https://raw.githubusercontent.com/zetaloop/zetaloop/main/scripts/install-fonts.ps1",
+    "pre_install": [
+        "$archive = \"$dir\\AlibabaPuHuiTi-3.zip\"",
+        "Invoke-WebRequest 'https://fonts.alibabadesign.com/AlibabaPuHuiTi-3.zip' -Headers @{ Referer = 'https://www.alibabafonts.com/' } -OutFile $archive",
+        "if ((Get-FileHash $archive).Hash -ne 'F25F730B6A7661BCD5B9764DC98F05D3AC25EE771977CF04B31ED5FBA9F496A7') { throw 'Hash check failed for AlibabaPuHuiTi-3.zip' }",
+        "Expand-7zipArchive $archive $dir -Removal"
+    ],
+    "installer": {
+        "script": [
+            "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
+            "& \"$dir\\install-fonts.ps1\" install"
+        ]
+    },
+    "uninstaller": {
+        "script": "& \"$dir\\install-fonts.ps1\" uninstall"
+    }
+}

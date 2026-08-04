@@ -1,0 +1,23 @@
+{
+    "version": "7.9",
+    "description": "Rounded monospace font with ligatures",
+    "homepage": "https://font.subf.dev/",
+    "license": "OFL-1.1",
+    "url": "https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-Variable.zip",
+    "hash": "b9e57677cc4ec069ce178bd965d66cd14bd26c12e37d89d786ff959339bf8c93",
+    "installer": {
+        "script": [
+            "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
+            "& \"$dir\\install-fonts.ps1\" install"
+        ]
+    },
+    "uninstaller": {
+        "script": "& \"$dir\\install-fonts.ps1\" uninstall"
+    },
+    "checkver": {
+        "github": "https://github.com/subframe7536/maple-font"
+    },
+    "autoupdate": {
+        "url": "https://github.com/subframe7536/maple-font/releases/download/v$version/MapleMono-Variable.zip"
+    }
+}

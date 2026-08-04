@@ -1,0 +1,23 @@
+{
+    "version": "34.8.0",
+    "description": "Terminal slab-serif monospace variant of Iosevka",
+    "homepage": "https://typeof.net/Iosevka/",
+    "license": "OFL-1.1",
+    "url": "https://github.com/be5invis/Iosevka/releases/download/v34.8.0/SuperTTC-SGr-IosevkaTermSlab-34.8.0.zip",
+    "hash": "069a2a2e97531ca26e04d54efbcc0aea13e1f0e78efe913d7bd23fecba8fab26",
+    "installer": {
+        "script": [
+            "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
+            "& \"$dir\\install-fonts.ps1\" install"
+        ]
+    },
+    "uninstaller": {
+        "script": "& \"$dir\\install-fonts.ps1\" uninstall"
+    },
+    "checkver": {
+        "github": "https://github.com/be5invis/Iosevka"
+    },
+    "autoupdate": {
+        "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/SuperTTC-SGr-IosevkaTermSlab-$version.zip"
+    }
+}
