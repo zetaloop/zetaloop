@@ -60,4 +60,20 @@
       </picture>
     </a></td>
   </tr>
+</tbody><tbody>
+  <tr>
+    <td colspan="6">
+      <details>
+        <summary>[ btw, this profile is also a scoop bucket / brew tap ]</summary><br/>
+
+  ```sh
+  scoop bucket add zetaloop https://github.com/zetaloop/zetaloop
+  brew tap zetaloop/zetaloop
+  ```
+  We have:
+  - Some nice fonts, plus `font-all` if you want all of them.
+
+      </details>
+    </td>
+  </tr>
 </tbody></table>
