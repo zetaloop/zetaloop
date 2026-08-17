@@ -1,0 +1,12 @@
+#!/bin/zsh
+set -e
+
+tap=zetaloop/zetaloop
+repo=$(brew --repository "$tap")
+casks=()
+
+for cask in "$repo"/Casks/font-*.rb(N); do
+    casks+=("$tap/$(basename "$cask" .rb)")
+done
+
+brew install --cask "${casks[@]}"
