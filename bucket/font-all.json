@@ -38,5 +38,11 @@
         "font-varela",
         "font-varela-round",
         "font-victor-mono"
-    ]
+    ],
+    "uninstaller": {
+        "script": [
+            "$dependencies = @($Manifest.depends)",
+            "scoop uninstall @dependencies"
+        ]
+    }
 }

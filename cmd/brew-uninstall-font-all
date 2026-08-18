@@ -1,0 +1,22 @@
+#!/bin/zsh
+set -e
+
+tap=zetaloop/zetaloop
+repo=$(brew --repository "$tap")
+typeset -A installed
+
+for cask in ${(f)"$(brew list --cask --full-name)"}; do
+    installed[$cask]=1
+done
+
+casks=()
+for cask in "$repo"/Casks/font-*.rb(N); do
+    token="$tap/$(basename "$cask" .rb)"
+    if [[ -n ${installed[$token]} ]]; then
+        casks+=($token)
+    fi
+done
+
+if (( ${#casks} )); then
+    brew uninstall --cask "${casks[@]}"
+fi
