@@ -8,10 +8,19 @@
     },
     "url": "https://raw.githubusercontent.com/zetaloop/zetaloop/main/scripts/install-fonts.ps1",
     "pre_install": [
-        "$archive = \"$dir\\AlibabaPuHuiTi-3.zip\"",
-        "Invoke-WebRequest 'https://fonts.alibabadesign.com/AlibabaPuHuiTi-3.zip' -Headers @{ Referer = 'https://www.alibabafonts.com/' } -OutFile $archive",
-        "if ((Get-FileHash $archive).Hash -ne 'F25F730B6A7661BCD5B9764DC98F05D3AC25EE771977CF04B31ED5FBA9F496A7') { throw 'Hash check failed for AlibabaPuHuiTi-3.zip' }",
-        "Expand-7zipArchive $archive $dir -Removal"
+        "$url = 'https://fonts.alibabadesign.com/AlibabaPuHuiTi-3.zip'",
+        "$archive = cache_path $app $version $url",
+        "if (!(Test-Path $archive) -or !$use_cache) {",
+        "    ensure $cachedir | Out-Null",
+        "    Invoke-WebRequest $url -Headers @{ Referer = 'https://www.alibabafonts.com/' } -OutFile \"${archive}.download\"",
+        "    Move-Item \"${archive}.download\" $archive -Force",
+        "} else {",
+        "    Write-Host 'Loading AlibabaPuHuiTi-3.zip from cache.'",
+        "}",
+        "$ok, $hashError = check_hash $archive 'f25f730b6a7661bcd5b9764dc98f05d3ac25ee771977cf04b31ed5fba9f496a7' $app",
+        "if (!$ok) { Remove-Item $archive -Force; throw $hashError }",
+        "Expand-7zipArchive $archive $dir",
+        "if (!$use_cache) { Remove-Item $archive -Force }"
     ],
     "installer": {
         "script": [
