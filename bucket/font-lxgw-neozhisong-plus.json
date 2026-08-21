@@ -1,15 +1,15 @@
 {
-    "version": "1.066",
+    "version": "1.067",
     "description": "Extended LXGW Neo ZhiSong Chinese serif font with local metrics variant",
     "homepage": "https://github.com/lxgw/LxgwNeoZhiSong",
     "license": "IPA",
     "depends": "main/uv",
     "url": [
-        "https://github.com/lxgw/LxgwNeoZhiSong/releases/download/v1.066/LXGWNeoZhiSongPlus.ttf",
+        "https://github.com/lxgw/LxgwNeoZhiSong/releases/download/v1.067/LXGWNeoZhiSongPlus.ttf",
         "https://raw.githubusercontent.com/zetaloop/zetaloop/main/scripts/transform-neozhisong.py"
     ],
     "hash": [
-        "279c973effc2811a827713ffa12706d556cab10b5067c0728400bf9e464f7008",
+        "639595c65001872d0da16dacaeb7de3ba396c64c37b70a16feb1536091bb6c1f",
         "29b769dc1ae66357c306f67e24d3f5fbc9f485f621aa21e0843fa66c823a7461"
     ],
     "pre_install": [
