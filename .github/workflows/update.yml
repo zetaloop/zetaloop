@@ -42,4 +42,5 @@ jobs:
           git clone "$GITHUB_WORKSPACE" "$tap_dir"
           git -C "$tap_dir" remote set-url origin "https://github.com/$GITHUB_REPOSITORY.git"
           cd "$tap_dir"
-          brew bump --no-fork --open-pr --casks --tap=zetaloop/zetaloop
+          brew trust zetaloop/zetaloop
+          brew bump --no-fork --open-pr --full-name --casks --tap=zetaloop/zetaloop
