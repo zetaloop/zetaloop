@@ -5,6 +5,8 @@ on:
   schedule:
     - cron: '20 3 * * *'
 
+concurrency: update
+
 jobs:
   scoop:
     runs-on: windows-latest
@@ -21,26 +23,20 @@ jobs:
           THROW_ERROR: 1
 
   homebrew:
+    needs: scoop
     runs-on: macos-26
     permissions:
       contents: write
-      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          ref: main
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@main
       - name: Update casks
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HOMEBREW_GIT_NAME: github-actions[bot]
           HOMEBREW_GIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
-        run: |
-          tap_dir="$(brew --repository)/Library/Taps/zetaloop/homebrew-zetaloop"
-          mkdir -p "$(dirname "$tap_dir")"
-          git clone "$GITHUB_WORKSPACE" "$tap_dir"
-          git -C "$tap_dir" remote set-url origin "https://github.com/$GITHUB_REPOSITORY.git"
-          cd "$tap_dir"
-          brew trust zetaloop/zetaloop
-          brew bump --no-fork --open-pr --full-name --casks --tap=zetaloop/zetaloop
+        run: scripts/update-casks
