@@ -1,6 +1,6 @@
 cask "font-iosevka-sgr-slab" do
-  version "34.8.0"
-  sha256 "ba91053fd83e882de92dc5af1c90c0e2b3aed5cc3b3fb83f5c0e5b0e951c9376"
+  version "34.8.1"
+  sha256 "ae5ff9d1c28c9739c3aa1f51929c11e93b6f8c0ce43136674e298c231358419a"
 
   url "https://github.com/be5invis/Iosevka/releases/download/v#{version}/SuperTTC-SGr-IosevkaSlab-#{version}.zip"
   name "SGr Iosevka Slab"
