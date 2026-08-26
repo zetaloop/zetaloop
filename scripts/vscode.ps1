@@ -47,7 +47,9 @@ function Set-RegistryValue {
         [Microsoft.Win32.RegistryValueKind] $Type = [Microsoft.Win32.RegistryValueKind]::String
     )
 
-    New-Item $Path -Force | Out-Null
+    if (!(Test-Path $Path)) {
+        New-Item $Path -Force | Out-Null
+    }
     New-ItemProperty $Path -Name $Name -Value $Value -PropertyType $Type -Force | Out-Null
 }
 
