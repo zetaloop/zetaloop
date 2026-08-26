@@ -1,0 +1,40 @@
+{
+    "version": "0.1.3",
+    "description": "Repairs command-line arguments crossing between native Windows and MSYS2 programs",
+    "homepage": "https://github.com/zetaloop/msys2-argv-fix",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zetaloop/msys2-argv-fix/releases/download/msys2-argv-fix-v0.1.3/msys2-argv-fix.dll",
+            "hash": "8d90a187f07267c333d17b6431c362db6d22cd2c6b15f0849c0862ee5ed63e04"
+        }
+    },
+    "pre_install": "if ([Runtime.InteropServices.RuntimeInformation]::OSArchitecture -eq 'Arm64') { abort \"MSYS2 does not publish an ARM64 runtime.\" }",
+    "post_install": [
+        "$prefix = \"$dir\".Replace('\\', '/')",
+        "$prefix = \"/proc/cygdrive/$($prefix[0].ToString().ToLower())$($prefix.Substring(2))\"",
+        "$entry = \"$prefix/msys2-argv-fix.dll\"",
+        "$entries = @((Get-EnvVar 'LD_PRELOAD' -Global:$global) -split ':' | Where-Object { $_ -and $_ -ne $entry })",
+        "Set-EnvVar 'LD_PRELOAD' (($entries + $entry) -join ':') -Global:$global"
+    ],
+    "uninstaller": {
+        "script": [
+            "$prefix = \"$dir\".Replace('\\', '/')",
+            "$prefix = \"/proc/cygdrive/$($prefix[0].ToString().ToLower())$($prefix.Substring(2))\"",
+            "$entry = \"$prefix/msys2-argv-fix.dll\"",
+            "$entries = @((Get-EnvVar 'LD_PRELOAD' -Global:$global) -split ':' | Where-Object { $_ -and $_ -ne $entry })",
+            "Set-EnvVar 'LD_PRELOAD' ($entries -join ':') -Global:$global"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/zetaloop/msys2-argv-fix",
+        "regex": "msys2-argv-fix-v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zetaloop/msys2-argv-fix/releases/download/msys2-argv-fix-v$version/msys2-argv-fix.dll"
+            }
+        }
+    }
+}
