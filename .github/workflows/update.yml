@@ -21,6 +21,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SKIP_UPDATED: 1
           THROW_ERROR: 1
+      - name: Update VS Code registry data
+        shell: pwsh
+        run: |
+          python scripts/update-vscode-registry.py
+          git diff --quiet -- scripts/vscode-registry.json
+          if ($LASTEXITCODE -eq 0) { exit }
+          $version = (Get-Content bucket/vscode.json -Raw | ConvertFrom-Json).version
+          git add scripts/vscode-registry.json
+          git commit -m "vscode: Update registry data to version $version"
+          git push
 
   homebrew:
     needs: scoop

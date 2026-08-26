@@ -1,0 +1,771 @@
+{
+    "version": "1.135.0",
+    "commit": "08d4889f9ec4a1685d257b9b95de036c8e1ce1e5",
+    "source": "https://github.com/microsoft/vscode/blob/08d4889f9ec4a1685d257b9b95de036c8e1ce1e5/build/win32/code.iss",
+    "localizations": {
+        "en": {
+            "sourceFile": "{0} Source File",
+            "contextMenu": "Open w&ith Code"
+        },
+        "de": {
+            "sourceFile": "{0}-Quelldatei",
+            "contextMenu": "Mit Code öffnen"
+        },
+        "es": {
+            "sourceFile": "Archivo de origen {0}",
+            "contextMenu": "Abrir &con Code"
+        },
+        "fr": {
+            "sourceFile": "Fichier source {0}",
+            "contextMenu": "Ouvrir avec Code"
+        },
+        "it": {
+            "sourceFile": "File di origine {0}",
+            "contextMenu": "Apri con Code"
+        },
+        "ja": {
+            "sourceFile": "{0} ソース ファイル",
+            "contextMenu": "Code で開く"
+        },
+        "ru": {
+            "sourceFile": "Исходный файл {0}",
+            "contextMenu": "Открыть с помощью Code"
+        },
+        "ko": {
+            "sourceFile": "{0} 원본 파일",
+            "contextMenu": "Code(으)로 열기"
+        },
+        "zh-cn": {
+            "sourceFile": "{0} 源文件",
+            "contextMenu": "通过 Code 打开"
+        },
+        "zh-tw": {
+            "sourceFile": "{0} 來源檔案",
+            "contextMenu": "以 Code 開啟"
+        },
+        "pt-br": {
+            "sourceFile": "Arquivo Fonte {0}",
+            "contextMenu": "Abrir com Code"
+        },
+        "hu": {
+            "sourceFile": "{0} forrásfájl",
+            "contextMenu": "Megnyitás a következővel: Code"
+        },
+        "tr": {
+            "sourceFile": "{0} Kaynak Dosyası",
+            "contextMenu": "Code İle Aç"
+        }
+    },
+    "associations": [
+        [
+            ".ascx",
+            "ASCX",
+            "xml.ico"
+        ],
+        [
+            ".asp",
+            "ASP",
+            "html.ico"
+        ],
+        [
+            ".aspx",
+            "ASPX",
+            "html.ico"
+        ],
+        [
+            ".bash",
+            "Bash",
+            "shell.ico"
+        ],
+        [
+            ".bash_login",
+            "Bash Login",
+            "shell.ico"
+        ],
+        [
+            ".bash_logout",
+            "Bash Logout",
+            "shell.ico"
+        ],
+        [
+            ".bash_profile",
+            "Bash Profile",
+            "shell.ico"
+        ],
+        [
+            ".bashrc",
+            "Bash RC",
+            "shell.ico"
+        ],
+        [
+            ".bib",
+            "BibTeX",
+            "default.ico"
+        ],
+        [
+            ".bowerrc",
+            "Bower RC",
+            "bower.ico"
+        ],
+        [
+            ".c++",
+            "C++",
+            "cpp.ico"
+        ],
+        [
+            ".c",
+            "C",
+            "c.ico"
+        ],
+        [
+            ".cc",
+            "C++",
+            "cpp.ico"
+        ],
+        [
+            ".cfg",
+            "Configuration",
+            "config.ico"
+        ],
+        [
+            ".cjs",
+            "JavaScript",
+            "javascript.ico"
+        ],
+        [
+            ".clj",
+            "Clojure",
+            "default.ico"
+        ],
+        [
+            ".cljs",
+            "ClojureScript",
+            "default.ico"
+        ],
+        [
+            ".cljx",
+            "CLJX",
+            "default.ico"
+        ],
+        [
+            ".clojure",
+            "Clojure",
+            "default.ico"
+        ],
+        [
+            ".cls",
+            "LaTeX",
+            "default.ico"
+        ],
+        [
+            ".code-workspace",
+            "Code Workspace",
+            "code.ico"
+        ],
+        [
+            ".cmake",
+            "CMake",
+            "default.ico"
+        ],
+        [
+            ".coffee",
+            "CoffeeScript",
+            "default.ico"
+        ],
+        [
+            ".config",
+            "Configuration",
+            "config.ico"
+        ],
+        [
+            ".containerfile",
+            "Containerfile",
+            "default.ico"
+        ],
+        [
+            ".cpp",
+            "C++",
+            "cpp.ico"
+        ],
+        [
+            ".cs",
+            "C#",
+            "csharp.ico"
+        ],
+        [
+            ".cshtml",
+            "CSHTML",
+            "html.ico"
+        ],
+        [
+            ".csproj",
+            "C# Project",
+            "xml.ico"
+        ],
+        [
+            ".css",
+            "CSS",
+            "css.ico"
+        ],
+        [
+            ".csv",
+            "Comma Separated Values",
+            "default.ico"
+        ],
+        [
+            ".csx",
+            "C# Script",
+            "csharp.ico"
+        ],
+        [
+            ".ctp",
+            "CakePHP Template",
+            "default.ico"
+        ],
+        [
+            ".cxx",
+            "C++",
+            "cpp.ico"
+        ],
+        [
+            ".dart",
+            "Dart",
+            "default.ico"
+        ],
+        [
+            ".diff",
+            "Diff",
+            "default.ico"
+        ],
+        [
+            ".dockerfile",
+            "Dockerfile",
+            "default.ico"
+        ],
+        [
+            ".dot",
+            "Dot",
+            "default.ico"
+        ],
+        [
+            ".dtd",
+            "Document Type Definition",
+            "xml.ico"
+        ],
+        [
+            ".editorconfig",
+            "Editor Config",
+            "config.ico"
+        ],
+        [
+            ".edn",
+            "Extensible Data Notation",
+            "default.ico"
+        ],
+        [
+            ".erb",
+            "Ruby",
+            "ruby.ico"
+        ],
+        [
+            ".eyaml",
+            "Hiera Eyaml",
+            "yaml.ico"
+        ],
+        [
+            ".eyml",
+            "Hiera Eyaml",
+            "yaml.ico"
+        ],
+        [
+            ".fs",
+            "F#",
+            "default.ico"
+        ],
+        [
+            ".fsi",
+            "F# Signature",
+            "default.ico"
+        ],
+        [
+            ".fsscript",
+            "F# Script",
+            "default.ico"
+        ],
+        [
+            ".fsx",
+            "F# Script",
+            "default.ico"
+        ],
+        [
+            ".gemspec",
+            "Gemspec",
+            "ruby.ico"
+        ],
+        [
+            ".gitattributes",
+            "Git Attributes",
+            "config.ico"
+        ],
+        [
+            ".gitconfig",
+            "Git Config",
+            "config.ico"
+        ],
+        [
+            ".gitignore",
+            "Git Ignore",
+            "config.ico"
+        ],
+        [
+            ".go",
+            "Go",
+            "go.ico"
+        ],
+        [
+            ".gradle",
+            "Gradle",
+            "default.ico"
+        ],
+        [
+            ".groovy",
+            "Groovy",
+            "default.ico"
+        ],
+        [
+            ".h",
+            "C Header",
+            "c.ico"
+        ],
+        [
+            ".handlebars",
+            "Handlebars",
+            "default.ico"
+        ],
+        [
+            ".hbs",
+            "Handlebars",
+            "default.ico"
+        ],
+        [
+            ".h++",
+            "C++ Header",
+            "cpp.ico"
+        ],
+        [
+            ".hh",
+            "C++ Header",
+            "cpp.ico"
+        ],
+        [
+            ".hpp",
+            "C++ Header",
+            "cpp.ico"
+        ],
+        [
+            ".htm",
+            "HTML",
+            "html.ico"
+        ],
+        [
+            ".html",
+            "HTML",
+            "html.ico"
+        ],
+        [
+            ".hxx",
+            "C++ Header",
+            "cpp.ico"
+        ],
+        [
+            ".ini",
+            "INI",
+            "config.ico"
+        ],
+        [
+            ".ipynb",
+            "Jupyter",
+            "python.ico"
+        ],
+        [
+            ".jade",
+            "Jade",
+            "jade.ico"
+        ],
+        [
+            ".jav",
+            "Java",
+            "java.ico"
+        ],
+        [
+            ".java",
+            "Java",
+            "java.ico"
+        ],
+        [
+            ".js",
+            "JavaScript",
+            "javascript.ico"
+        ],
+        [
+            ".jsx",
+            "JavaScript",
+            "react.ico"
+        ],
+        [
+            ".jscsrc",
+            "JSCS RC",
+            "javascript.ico"
+        ],
+        [
+            ".jshintrc",
+            "JSHint RC",
+            "javascript.ico"
+        ],
+        [
+            ".jshtm",
+            "JavaScript HTML Template",
+            "html.ico"
+        ],
+        [
+            ".json",
+            "JSON",
+            "json.ico"
+        ],
+        [
+            ".jsp",
+            "Java Server Pages",
+            "html.ico"
+        ],
+        [
+            ".less",
+            "LESS",
+            "less.ico"
+        ],
+        [
+            ".log",
+            "Log file",
+            "default.ico"
+        ],
+        [
+            ".lua",
+            "Lua",
+            "default.ico"
+        ],
+        [
+            ".m",
+            "Objective C",
+            "default.ico"
+        ],
+        [
+            ".makefile",
+            "Makefile",
+            "default.ico"
+        ],
+        [
+            ".markdown",
+            "Markdown",
+            "markdown.ico"
+        ],
+        [
+            ".md",
+            "Markdown",
+            "markdown.ico"
+        ],
+        [
+            ".mdoc",
+            "MDoc",
+            "markdown.ico"
+        ],
+        [
+            ".mdown",
+            "Markdown",
+            "markdown.ico"
+        ],
+        [
+            ".mdtext",
+            "Markdown",
+            "markdown.ico"
+        ],
+        [
+            ".mdtxt",
+            "Markdown",
+            "markdown.ico"
+        ],
+        [
+            ".mdwn",
+            "Markdown",
+            "markdown.ico"
+        ],
+        [
+            ".mk",
+            "Makefile",
+            "default.ico"
+        ],
+        [
+            ".mkd",
+            "Markdown",
+            "markdown.ico"
+        ],
+        [
+            ".mkdn",
+            "Markdown",
+            "markdown.ico"
+        ],
+        [
+            ".ml",
+            "OCaml",
+            "default.ico"
+        ],
+        [
+            ".mli",
+            "OCaml",
+            "default.ico"
+        ],
+        [
+            ".mjs",
+            "JavaScript",
+            "javascript.ico"
+        ],
+        [
+            ".npmignore",
+            "NPM Ignore",
+            "default.ico"
+        ],
+        [
+            ".php",
+            "PHP",
+            "php.ico"
+        ],
+        [
+            ".phtml",
+            "PHP HTML",
+            "html.ico"
+        ],
+        [
+            ".pl",
+            "Perl",
+            "default.ico"
+        ],
+        [
+            ".pl6",
+            "Perl 6",
+            "default.ico"
+        ],
+        [
+            ".plist",
+            "Properties file",
+            "default.ico"
+        ],
+        [
+            ".pm",
+            "Perl Module",
+            "default.ico"
+        ],
+        [
+            ".pm6",
+            "Perl 6 Module",
+            "default.ico"
+        ],
+        [
+            ".pod",
+            "Perl POD",
+            "default.ico"
+        ],
+        [
+            ".pp",
+            "Perl",
+            "default.ico"
+        ],
+        [
+            ".profile",
+            "Profile",
+            "shell.ico"
+        ],
+        [
+            ".properties",
+            "Properties",
+            "default.ico"
+        ],
+        [
+            ".ps1",
+            "PowerShell",
+            "powershell.ico"
+        ],
+        [
+            ".psd1",
+            "PowerShell Module Manifest",
+            "powershell.ico"
+        ],
+        [
+            ".psgi",
+            "Perl CGI",
+            "default.ico"
+        ],
+        [
+            ".psm1",
+            "PowerShell Module",
+            "powershell.ico"
+        ],
+        [
+            ".py",
+            "Python",
+            "python.ico"
+        ],
+        [
+            ".pyi",
+            "Python",
+            "python.ico"
+        ],
+        [
+            ".r",
+            "R",
+            "default.ico"
+        ],
+        [
+            ".rb",
+            "Ruby",
+            "ruby.ico"
+        ],
+        [
+            ".rhistory",
+            "R History",
+            "shell.ico"
+        ],
+        [
+            ".rprofile",
+            "R Profile",
+            "shell.ico"
+        ],
+        [
+            ".rs",
+            "Rust",
+            "default.ico"
+        ],
+        [
+            ".rst",
+            "Restructured Text",
+            "default.ico"
+        ],
+        [
+            ".rt",
+            "Rich Text",
+            "default.ico"
+        ],
+        [
+            ".sass",
+            "Sass",
+            "sass.ico"
+        ],
+        [
+            ".scss",
+            "Sass",
+            "sass.ico"
+        ],
+        [
+            ".sh",
+            "SH",
+            "shell.ico"
+        ],
+        [
+            ".shtml",
+            "SHTML",
+            "html.ico"
+        ],
+        [
+            ".sql",
+            "SQL",
+            "sql.ico"
+        ],
+        [
+            ".svg",
+            "SVG",
+            "default.ico"
+        ],
+        [
+            ".t",
+            "Perl",
+            "default.ico"
+        ],
+        [
+            ".tex",
+            "LaTeX",
+            "default.ico"
+        ],
+        [
+            ".ts",
+            "TypeScript",
+            "typescript.ico"
+        ],
+        [
+            ".toml",
+            "Toml",
+            "default.ico"
+        ],
+        [
+            ".tsx",
+            "TypeScript",
+            "react.ico"
+        ],
+        [
+            ".txt",
+            "Text",
+            "default.ico"
+        ],
+        [
+            ".vb",
+            "Visual Basic",
+            "default.ico"
+        ],
+        [
+            ".vue",
+            "VUE",
+            "vue.ico"
+        ],
+        [
+            ".wxi",
+            "WiX Include",
+            "default.ico"
+        ],
+        [
+            ".wxl",
+            "WiX Localization",
+            "default.ico"
+        ],
+        [
+            ".wxs",
+            "WiX",
+            "default.ico"
+        ],
+        [
+            ".xaml",
+            "XAML",
+            "xml.ico"
+        ],
+        [
+            ".xhtml",
+            "HTML",
+            "html.ico"
+        ],
+        [
+            ".xml",
+            "XML",
+            "xml.ico"
+        ],
+        [
+            ".yaml",
+            "Yaml",
+            "yaml.ico"
+        ],
+        [
+            ".yml",
+            "Yaml",
+            "yaml.ico"
+        ],
+        [
+            ".zsh",
+            "ZSH",
+            "shell.ico"
+        ]
+    ]
+}

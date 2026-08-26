@@ -71,6 +71,7 @@ brew tap zetaloop/zetaloop &amp;&amp; brew trust zetaloop/zetaloop</code></pre><
 
 - `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
 - `pixpin` <kbd>scoop</kbd> (Freeware)
+- `vscode` <kbd>scoop</kbd> with proper identity and windows 11 context menu
 - Fonts <kbd>scoop</kbd> <kbd>brew</kbd>
   - Alibaba PuHuiTi
   - Fira Code
