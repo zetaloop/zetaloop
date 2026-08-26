@@ -70,6 +70,7 @@ scoop bucket add zetaloop https://github.com/zetaloop/zetaloop
 brew tap zetaloop/zetaloop &amp;&amp; brew trust zetaloop/zetaloop</code></pre></summary>
 
 - `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
+- `notepadplusplus` <kbd>scoop</kbd> with windows 11 context menu
 - `pixpin` <kbd>scoop</kbd> (Freeware)
 - `vscode` <kbd>scoop</kbd> with proper identity and windows 11 context menu
 - Fonts <kbd>scoop</kbd> <kbd>brew</kbd>
