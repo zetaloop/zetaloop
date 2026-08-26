@@ -16,12 +16,35 @@
             "PixPin"
         ]
     ],
-    "post_install": "if (!(Test-Path \"$dir\\Config\\config.json\")) { Set-Content -Encoding ASCII -Path \"$dir\\Config\\config.json\" -Value '{\"System.Update.AutoCheckUpdate\":{\"subConf\":{\"checkBeta\":false},\"value\":false}}' }",
-    "persist": [
-        "History",
-        "Data",
-        "Config",
-        "OcrModel"
+    "pre_install": [
+        "if (!(Test-Path \"$dir\\unins000.exe\")) { New-Item \"$dir\\unins000.exe\" | Out-Null }",
+        "$profileDir = \"$env:LOCALAPPDATA\\PixPin\"",
+        "$profile = Get-Item $profileDir -Force -ErrorAction SilentlyContinue",
+        "if ($profile -and !$profile.LinkType -and !(Test-Path $persist_dir)) {",
+        "    info \"Migrating PixPin profile from $profileDir to $persist_dir\"",
+        "    Move-Item $profileDir $persist_dir",
+        "}",
+        "$configPath = \"$persist_dir\\Config\\PixPinConfig.json\"",
+        "if (!(Test-Path $configPath) -and !(Test-Path \"$env:LOCALAPPDATA\\PixPin\\Config\\PixPinConfig.json\")) {",
+        "    ensure (Split-Path $configPath) | Out-Null",
+        "    $timestamp = [DateTimeOffset]::Now.ToUnixTimeSeconds()",
+        "    $content = '{\"System.Update.UpgradeMode#s.win\":{\"t\":' + $timestamp + ',\"v\":0}}'",
+        "    $content | Set-Content -Path $configPath -Encoding UTF8",
+        "}"
+    ],
+    "post_install": [
+        "$profileDir = \"$env:LOCALAPPDATA\\PixPin\"",
+        "$profile = Get-Item $profileDir -Force -ErrorAction SilentlyContinue",
+        "if (!$profile) {",
+        "    New-DirectoryJunction $profileDir $persist_dir | Out-Null",
+        "} elseif (!$profile.LinkType -or ($profile.Target -join '') -ne $persist_dir) {",
+        "    warn \"Existing PixPin profile found at $profileDir; migrate it to $persist_dir before running PixPin.\"",
+        "}"
+    ],
+    "post_uninstall": [
+        "$profileDir = \"$env:LOCALAPPDATA\\PixPin\"",
+        "$profile = Get-Item $profileDir -Force -ErrorAction SilentlyContinue",
+        "if ($profile.LinkType -and ($profile.Target -join '') -eq $persist_dir) { Remove-Item $profileDir -Recurse -Force }"
     ],
     "checkver": {
         "url": "https://upgrade.pixpin.cn/api/check/0/0.0.0.0/windows/x64/intl/zh-cn/.zip",
