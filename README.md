@@ -64,34 +64,33 @@
   <tr>
     <td colspan="6">
       <details>
-        <summary><pre lang="ini"><code>[ btw, this profile is also a scoop bucket / brew tap ]
+
+<summary><pre lang="ini"><code>[ btw, this profile is also a scoop bucket / brew tap ]
 scoop bucket add zetaloop https://github.com/zetaloop/zetaloop
 brew tap zetaloop/zetaloop &amp;&amp; brew trust zetaloop/zetaloop</code></pre></summary>
-        <details>
-          <summary>Fonts<pre lang="sh"><code>scoop (un)install font-all
-brew (un)install-font-all</code></pre></summary>
-          <table><tbody>
-            <tr><td>Alibaba PuHuiTi 3</td></tr>
-            <tr><td>Fira Code</td></tr>
-            <tr><td>HarmonyOS Sans</td></tr>
-            <tr><td>Iosevka / Aile / Etoile / SGr / SGr Slab / SGr Term / SGr Term Slab</td></tr>
-            <tr><td>JetBrains Mono</td></tr>
-            <tr><td>LXGW Bright / Code</td></tr>
-            <tr><td>LXGW Marker Gothic</td></tr>
-            <tr><td>LXGW Neo XiHei / Plus</td></tr>
-            <tr><td>LXGW Neo ZhiSong / Plus</td></tr>
-            <tr><td>LXGW WenKai / Lite</td></tr>
-            <tr><td>Maple Mono / NF CN / Normal / Normal NF CN</td></tr>
-            <tr><td>MiSans / L3 / TC</td></tr>
-            <tr><td>Monaspace</td></tr>
-            <tr><td>Montserrat</td></tr>
-            <tr><td>Mulish</td></tr>
-            <tr><td>Space Grotesk</td></tr>
-            <tr><td>Varela / Round</td></tr>
-            <tr><td>Victor Mono</td></tr>
-          </tbody></table>
-        </details>
-      </details>
-    </td>
-  </tr>
-</tbody></table>
+
+- `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
+- `pixpin` <kbd>scoop</kbd> (Freeware)
+- Fonts <kbd>scoop</kbd> <kbd>brew</kbd>
+  - Alibaba PuHuiTi
+  - Fira Code
+  - HarmonyOS Sans
+  - Iosevka / Aile / Etoile / SGr / SGr Slab / SGr Term / SGr Term Slab
+  - JetBrains Mono
+  - LXGW Bright / Code
+  - LXGW Marker Gothic
+  - LXGW Neo XiHei / Plus
+  - LXGW Neo ZhiSong / Plus
+  - LXGW WenKai / Lite
+  - Maple Mono / NF CN / Normal / Normal NF CN
+  - MiSans / L3 / TC
+  - Monaspace
+  - Montserrat
+  - Mulish
+  - Space Grotesk
+  - Varela / Round
+  - Victor Mono
+  - `scoop (un)install font-all`
+  - `brew (un)install-font-all`
+
+</details></td></tr></tbody></table>
