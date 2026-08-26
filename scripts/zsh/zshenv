@@ -1,0 +1,12 @@
+module_path=("${(@)module_path/#\//$ZSH_SCOOP_ROOT/}")
+fpath=("${(@)fpath/#\//$ZSH_SCOOP_ROOT/}")
+PROMPT="%F{green}%n@%m%f %F{magenta}${MSYSTEM}%f %F{yellow}%~%f %# "
+
+ZDOTDIR=${ZSH_USER_ZDOTDIR:-$HOME}
+[[ -r "$ZDOTDIR/.zshenv" ]] && source "$ZDOTDIR/.zshenv"
+
+if [[ -o login ]]; then
+    emulate sh -c 'source /etc/profile'
+fi
+
+unset ZSH_SCOOP_ROOT ZSH_USER_ZDOTDIR

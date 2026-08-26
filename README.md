@@ -73,6 +73,7 @@ brew tap zetaloop/zetaloop &amp;&amp; brew trust zetaloop/zetaloop</code></pre><
 - `notepadplusplus` <kbd>scoop</kbd> with windows 11 context menu
 - `pixpin` <kbd>scoop</kbd> (Freeware)
 - `vscode` <kbd>scoop</kbd> with proper identity and windows 11 context menu
+- `zsh` <kbd>scoop</kbd> powered by scoop `git`
 - Fonts <kbd>scoop</kbd> <kbd>brew</kbd>
   - Alibaba PuHuiTi
   - Fira Code

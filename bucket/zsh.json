@@ -1,0 +1,33 @@
+{
+    "version": "5.9.2-1",
+    "description": "Z shell for Git for Windows",
+    "homepage": "https://www.zsh.org/",
+    "license": "Zsh",
+    "depends": "main/git",
+    "architecture": {
+        "64bit": {
+            "url": "https://mirror.msys2.org/msys/x86_64/zsh-5.9.2-1-x86_64.pkg.tar.zst",
+            "hash": "9a134200a152d90a0f1820d6aa74c3369d8539c068b523852549d74b16739fa8"
+        }
+    },
+    "pre_install": [
+        "if ([Runtime.InteropServices.RuntimeInformation]::OSArchitecture -eq 'Arm64') { abort \"MSYS2 does not publish an ARM64 zsh package.\" }",
+        "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\zsh\\zsh\") $dir -ErrorAction Stop",
+        "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\zsh\\zshenv\") \"$dir\\.zshenv\" -ErrorAction Stop",
+        "Copy-Item \"$(versiondir 'scoop' 'current')\\supporting\\shims\\71\\shim.exe\" \"$dir\\zsh.exe\"",
+        "$zshRoot = & \"$env:GIT_INSTALL_ROOT\\usr\\bin\\cygpath.exe\" -u \"$dir\"",
+        "@(\"path = `\"$env:GIT_INSTALL_ROOT\\usr\\bin\\bash.exe`\"\", \"args = --noprofile --norc `\"$zshRoot/zsh`\"\") -join \"`r`n\" | Out-UTF8File \"$dir\\zsh.shim\""
+    ],
+    "bin": "zsh.exe",
+    "checkver": {
+        "url": "https://packages.msys2.org/packages/zsh?repo=msys&variant=x86_64",
+        "regex": "msys/x86_64/zsh-([\\d.]+-\\d+)-x86_64\\.pkg\\.tar\\.zst"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://mirror.msys2.org/msys/x86_64/zsh-$version-x86_64.pkg.tar.zst"
+            }
+        }
+    }
+}
