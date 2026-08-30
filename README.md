@@ -69,12 +69,14 @@
 scoop bucket add zetaloop https://github.com/zetaloop/zetaloop
 brew tap zetaloop/zetaloop &amp;&amp; brew trust zetaloop/zetaloop</code></pre></summary>
 
-- `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
+- `chsimexx` <kbd>scoop</kbd> [zetaloop/ChsIMExx](https://github.com/zetaloop/ChsIMExx)
+- `scimxx` <kbd>brew</kbd> [zetaloop/SCIMxx](https://github.com/zetaloop/SCIMxx)
 - `msys2-argv-fix` <kbd>scoop</kbd> [zetaloop/msys2-argv-fix](https://github.com/zetaloop/msys2-argv-fix)
-- `notepadplusplus` <kbd>scoop</kbd> with windows 11 context menu
-- `pixpin` <kbd>scoop</kbd> (Freeware)
-- `vscode` <kbd>scoop</kbd> with proper identity and windows 11 context menu
+- `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
 - `zsh` <kbd>scoop</kbd> powered by scoop `git`
+- `pixpin` <kbd>scoop</kbd> (Freeware)
+- `notepadplusplus` <kbd>scoop</kbd> with windows 11 context menu
+- `vscode` <kbd>scoop</kbd> with proper identity and windows 11 context menu
 - Fonts <kbd>scoop</kbd> <kbd>brew</kbd>
   - Alibaba PuHuiTi
   - Fira Code
