@@ -18,8 +18,10 @@ cask "font-lxgw-neozhisong" do
   font "LXGWNeoZhiSong.ttf"
   font "LXGWNeoZhiSongO.ttf"
 
-  preflight do
-    system_command "#{HOMEBREW_PREFIX}/bin/uv",
-                   args: ["run", "#{__dir__}/../scripts/transform-neozhisong.py", "#{staged_path}/LXGWNeoZhiSong.ttf"]
+  preflight_steps do
+    run "bin/uv", base:           :homebrew_prefix,
+                  args:           ["run", "https://raw.githubusercontent.com/zetaloop/zetaloop/main/scripts/transform-neozhisong.py",
+                                   "{{staged_path}}/LXGWNeoZhiSong.ttf"],
+                  network_access: true
   end
 end

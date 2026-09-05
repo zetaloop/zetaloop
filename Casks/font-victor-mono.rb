@@ -2,8 +2,7 @@ cask "font-victor-mono" do
   version "1.5.6"
   sha256 "eab377ad3bcc7a202697c024ebb8c8728f99789c4f093d358f3d202052cc9496"
 
-  url "https://raw.githubusercontent.com/rubjo/victor-mono/v#{version}/public/VictorMonoAll.zip",
-      verified: "raw.githubusercontent.com/rubjo/victor-mono/"
+  url "https://raw.githubusercontent.com/rubjo/victor-mono/v#{version}/public/VictorMonoAll.zip"
   name "Victor Mono"
   desc "Monospaced font with cursive italics and programming ligatures"
   homepage "https://rubjo.github.io/victor-mono/"

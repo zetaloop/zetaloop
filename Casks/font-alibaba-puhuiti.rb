@@ -3,8 +3,7 @@ cask "font-alibaba-puhuiti" do
   sha256 "f25f730b6a7661bcd5b9764dc98f05d3ac25ee771977cf04b31ed5fba9f496a7"
 
   url "https://fonts.alibabadesign.com/AlibabaPuHuiTi-3.zip",
-      verified: "fonts.alibabadesign.com/",
-      referer:  "https://www.alibabafonts.com/"
+      referer: "https://www.alibabafonts.com/"
   name "Alibaba PuHuiTi 3"
   desc "Alibaba PuHuiTi Chinese sans-serif family"
   homepage "https://www.alibabafonts.com/"

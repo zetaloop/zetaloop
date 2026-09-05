@@ -2,8 +2,7 @@ cask "font-maple-mono-normal-nf-cn" do
   version "7.9"
   sha256 "24aeb14ed756d78b112e6692ea02c669e16afaa0f01e7bfdbb37d2e63fa45fa7"
 
-  url "https://github.com/subframe7536/maple-font/releases/download/v#{version}/MapleMonoNormal-NF-CN.zip",
-      verified: "github.com/subframe7536/maple-font/"
+  url "https://github.com/subframe7536/maple-font/releases/download/v#{version}/MapleMonoNormal-NF-CN.zip"
   name "Maple Mono Normal NF CN"
   desc "Conventional-glyph rounded monospace font with Nerd Font icons and Chinese glyphs"
   homepage "https://font.subf.dev/"
