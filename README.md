@@ -74,6 +74,7 @@ brew tap zetaloop/zetaloop &amp;&amp; brew trust zetaloop/zetaloop</code></pre><
 - `msys2-argv-fix` <kbd>scoop</kbd> [zetaloop/msys2-argv-fix](https://github.com/zetaloop/msys2-argv-fix)
 - `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
 - `zsh` <kbd>scoop</kbd> powered by scoop `git`
+- `tunnel-client` <kbd>scoop</kbd> [openai/tunnel-client](https://github.com/openai/tunnel-client)
 - `pixpin` <kbd>scoop</kbd> (Freeware)
 - `notepadplusplus` <kbd>scoop</kbd> with windows 11 context menu
 - `vscode` <kbd>scoop</kbd> with proper identity and windows 11 context menu
