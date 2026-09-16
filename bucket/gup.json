@@ -1,0 +1,28 @@
+{
+    "version": "1.9.3",
+    "description": "Update binaries installed by go install",
+    "homepage": "https://github.com/nao1215/gup",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/nao1215/gup/releases/download/v1.9.3/gup_1.9.3_windows_amd64.zip",
+            "hash": "fc875d48376fe194117846f3581fbe00bc3cde839a45c91c492c87319e8014cf"
+        },
+        "arm64": {
+            "url": "https://github.com/nao1215/gup/releases/download/v1.9.3/gup_1.9.3_windows_arm64.zip",
+            "hash": "9a2bbb3886bd08382713ef0daadc1ac0627482e2410e5db9bd3a93204c313933"
+        }
+    },
+    "bin": "gup.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/nao1215/gup/releases/download/v$version/gup_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/nao1215/gup/releases/download/v$version/gup_$version_windows_arm64.zip"
+            }
+        }
+    }
+}

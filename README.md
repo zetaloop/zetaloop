@@ -75,6 +75,7 @@ brew tap zetaloop/zetaloop &amp;&amp; brew trust zetaloop/zetaloop</code></pre><
 - `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
 - `zsh` <kbd>scoop</kbd> powered by scoop `git`
 - `tunnel-client` <kbd>scoop</kbd> [openai/tunnel-client](https://github.com/openai/tunnel-client)
+- `gup` <kbd>scoop</kbd> [nao1215/gup](https://github.com/nao1215/gup)
 - `pixpin` <kbd>scoop</kbd> (Freeware)
 - `notepadplusplus` <kbd>scoop</kbd> with windows 11 context menu
 - `vscode` <kbd>scoop</kbd> with proper identity and windows 11 context menu
