@@ -1,7 +1,7 @@
 {
-    "version": "1.138.0",
-    "commit": "7debcd0e2acdea1c52de81bf9ee1620444407dda",
-    "source": "https://github.com/microsoft/vscode/blob/7debcd0e2acdea1c52de81bf9ee1620444407dda/build/win32/code.iss",
+    "version": "1.139.0",
+    "commit": "2242ebbb54efeeb0129e08e919e7e8d43033cd83",
+    "source": "https://github.com/microsoft/vscode/blob/2242ebbb54efeeb0129e08e919e7e8d43033cd83/build/win32/code.iss",
     "localizations": {
         "en": {
             "sourceFile": "{0} Source File",
