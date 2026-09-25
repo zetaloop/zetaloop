@@ -1,16 +1,16 @@
 {
-    "version": "0.0.14",
+    "version": "0.0.15",
     "description": "Customer-run agent for Secure MCP Tunnel",
     "homepage": "https://github.com/openai/tunnel-client",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://persistent.oaistatic.com/tunnel-client/v0.0.14/tunnel-client-v0.0.14-windows-amd64.zip",
-            "hash": "784ab8da7b5a88f0109f1fd8aaf0a1c86067430b896dddf307ef7e3cc49fa1a5"
+            "url": "https://persistent.oaistatic.com/tunnel-client/v0.0.15/tunnel-client-v0.0.15-windows-amd64.zip",
+            "hash": "3b53133a1e24d43f63088d843860cb1701a4c3ed6390de2e19f69089e43bddc1"
         },
         "arm64": {
-            "url": "https://persistent.oaistatic.com/tunnel-client/v0.0.14/tunnel-client-v0.0.14-windows-arm64.zip",
-            "hash": "fa775db8897df543dd4ba66404f69492a2acfbc6a291f10df27aced064a16568"
+            "url": "https://persistent.oaistatic.com/tunnel-client/v0.0.15/tunnel-client-v0.0.15-windows-arm64.zip",
+            "hash": "571e0d59ed9e86d1b105dc34f3267865f654de6968b01efd7c847f0af657d11d"
         }
     },
     "bin": "tunnel-client.exe",
