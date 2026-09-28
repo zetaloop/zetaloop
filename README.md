@@ -74,10 +74,8 @@ brew tap zetaloop/zetaloop &amp;&amp; brew trust zetaloop/zetaloop</code></pre><
 - `msys2-argv-fix` <kbd>scoop</kbd> [zetaloop/msys2-argv-fix](https://github.com/zetaloop/msys2-argv-fix)
 - `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
 - `zsh` <kbd>scoop</kbd> powered by scoop `git`
-- `tunnel-client` <kbd>scoop</kbd> [openai/tunnel-client](https://github.com/openai/tunnel-client)
 - `gup` <kbd>scoop</kbd> [nao1215/gup](https://github.com/nao1215/gup)
-- `ilspy` <kbd>scoop</kbd> <kbd>brew</kbd> [icsharpcode/ILSpy](https://github.com/icsharpcode/ILSpy)
-- `ilspycmd` <kbd>scoop</kbd> <kbd>brew</kbd> [icsharpcode/ILSpy](https://github.com/icsharpcode/ILSpy)
+- `ilspy`/`ilspycmd` <kbd>scoop</kbd> <kbd>brew</kbd> [icsharpcode/ILSpy](https://github.com/icsharpcode/ILSpy)
 - `cpp2il` <kbd>scoop</kbd> <kbd>brew</kbd> [SamboyCoding/Cpp2IL](https://github.com/SamboyCoding/Cpp2IL)
 - `goresym` <kbd>scoop</kbd> [mandiant/GoReSym](https://github.com/mandiant/GoReSym)
 - `capa` <kbd>scoop</kbd> <kbd>brew</kbd> [mandiant/capa](https://github.com/mandiant/capa)
