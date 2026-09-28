@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+tap=zetaloop/zetaloop
+tap_dir="$(brew --repository)/Library/Taps/zetaloop/homebrew-zetaloop"
+mkdir -p "$(dirname "$tap_dir")"
+ln -s "$GITHUB_WORKSPACE" "$tap_dir"
+brew trust "$tap"
+cd "$tap_dir"
+git remote set-head origin main
+
+brew livecheck --json --newer-only --full-name --tap="$tap" |
+  jq -r '.[] | select(.version.outdated) | [if .formula then "formula" else "cask" end, (.formula // .cask), .version.latest] | @tsv' |
+  while IFS=$'\t' read -r type package version; do
+    if [[ $type == formula ]]; then
+      brew bump-formula-pr --write-only --commit --version="$version" "$package"
+    else
+      brew bump-cask-pr --write-only --commit --version="$version" "$package"
+    fi
+  done
+
+git push

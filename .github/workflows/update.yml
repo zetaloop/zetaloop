@@ -44,9 +44,9 @@ jobs:
           ref: main
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@main
-      - name: Update casks
+      - name: Update packages
         env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HOMEBREW_GIT_NAME: github-actions[bot]
           HOMEBREW_GIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
-        run: scripts/update-casks
+        run: scripts/update-homebrew
