@@ -1,12 +1,12 @@
 {
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "Microsoft Pinyin enhancements for Windows 11",
     "homepage": "https://github.com/zetaloop/ChsIMExx",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zetaloop/ChsIMExx/releases/download/v0.3.0/chsimexx-v0.3.0-windows-x86_64.zip",
-            "hash": "3ff726bbd2a8593c86e2f43fc8021b1e67bbf4cc5621ccef20f87ec9d7d8f7a6"
+            "url": "https://github.com/zetaloop/ChsIMExx/releases/download/v0.3.1/chsimexx-v0.3.1-windows-x86_64.zip",
+            "hash": "ea98ad8afea0fb8043c539584299d83750ee8d9d045518c5d07a162f32012bdf"
         }
     },
     "bin": "chsimexx.exe",
