@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+nix flake update
+
+system=$(nix eval --raw --impure --expr builtins.currentSystem)
+packages=$(nix eval --raw ".#packages.$system" --apply 'p: builtins.concatStringsSep "\n" (builtins.attrNames p)')
+
+for package in $packages; do
+  sources=$(nix eval --raw ".#$package.sources" --apply 's: builtins.concatStringsSep "\n" (builtins.attrNames s)')
+  args=(--flake --no-src)
+  for source in $sources; do
+    args+=(--subpackage "sources.$source")
+  done
+  nix-update "$package" "${args[@]}"
+done
+
+nixfmt flake.nix pkgs/*.nix

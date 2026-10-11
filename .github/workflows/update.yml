@@ -50,3 +50,27 @@ jobs:
           HOMEBREW_GIT_NAME: github-actions[bot]
           HOMEBREW_GIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: scripts/update-homebrew
+
+  nix:
+    needs: homebrew
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: main
+      - name: Set up Nix
+        uses: cachix/install-nix-action@v31.11.1
+      - name: Update packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          nix shell --inputs-from . nixpkgs#nix-update nixpkgs#nixfmt -c scripts/update-nix
+          git diff --quiet -- flake.lock pkgs && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add flake.lock pkgs
+          git commit -m "chore: update Nix packages"
+          git push

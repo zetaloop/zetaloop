@@ -65,9 +65,10 @@
     <td colspan="6">
       <details>
 
-<summary><pre lang="ini"><code>[ btw, this profile is also a scoop bucket / brew tap ]
+<summary><pre lang="ini"><code>[ btw, this profile is also a scoop bucket / brew tap / nix flake ]
 scoop bucket add zetaloop https://github.com/zetaloop/zetaloop
-brew tap zetaloop/zetaloop &amp;&amp; brew trust zetaloop/zetaloop</code></pre></summary>
+brew tap zetaloop/zetaloop &amp;&amp; brew trust zetaloop/zetaloop
+nix registry add zetaloop github:zetaloop/zetaloop</code></pre></summary>
 
 - `chsimexx` <kbd>scoop</kbd> [zetaloop/ChsIMExx](https://github.com/zetaloop/ChsIMExx)
 - `scimxx` <kbd>brew</kbd> [zetaloop/SCIMxx](https://github.com/zetaloop/SCIMxx)
@@ -75,6 +76,7 @@ brew tap zetaloop/zetaloop &amp;&amp; brew trust zetaloop/zetaloop</code></pre><
 - `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
 - `zsh` <kbd>scoop</kbd> powered by scoop `git`
 - `gup` <kbd>scoop</kbd> [nao1215/gup](https://github.com/nao1215/gup)
+- `xray-knife` <kbd>scoop</kbd> <kbd>brew</kbd> <kbd>nix</kbd> [lilendian0x00/xray-knife](https://github.com/lilendian0x00/xray-knife)
 - `ilspy`/`ilspycmd` <kbd>scoop</kbd> <kbd>brew</kbd> [icsharpcode/ILSpy](https://github.com/icsharpcode/ILSpy)
 - `cpp2il` <kbd>scoop</kbd> <kbd>brew</kbd> [SamboyCoding/Cpp2IL](https://github.com/SamboyCoding/Cpp2IL)
 - `goresym` <kbd>scoop</kbd> [mandiant/GoReSym](https://github.com/mandiant/GoReSym)
