@@ -22,7 +22,7 @@ jobs:
           SKIP_UPDATED: 1
           THROW_ERROR: 1
       - name: Set up uv
-        uses: astral-sh/setup-uv@v10
+        uses: astral-sh/setup-uv@v10.3.0
         with:
           cache-dependency-glob: scripts/*.py
       - name: Cache font metadata
