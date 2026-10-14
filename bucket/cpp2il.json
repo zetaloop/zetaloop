@@ -15,9 +15,12 @@
     },
     "bin": "cpp2il.exe",
     "checkver": {
-        "github": "https://api.github.com/repos/SamboyCoding/Cpp2IL/releases?per_page=1",
-        "jsonpath": "$[0].tag_name",
-        "regex": "([\\d.]+(?:-pre-release\\.\\d+)?)"
+        "github": "https://api.github.com/repos/SamboyCoding/Cpp2IL/releases",
+        "script": [
+            "$versions = ($page | ConvertFrom-Json) | Where-Object { !$_.draft } | Select-Object -ExpandProperty tag_name | Where-Object { $_ -match '^\\d+(?:\\.\\d+)+(?:-pre-release\\.\\d+)?$' }",
+            "$versions | Sort-Object { [semver] $_ } -Descending | Select-Object -First 1"
+        ],
+        "regex": "^(.+)$"
     },
     "autoupdate": {
         "architecture": {

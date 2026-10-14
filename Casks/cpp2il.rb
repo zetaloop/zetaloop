@@ -11,8 +11,13 @@ cask "cpp2il" do
   homepage "https://github.com/SamboyCoding/Cpp2IL"
 
   livecheck do
-    url "https://github.com/SamboyCoding/Cpp2IL.git"
+    url :url
     regex(/^(\d+(?:\.\d+)+(?:-pre-release\.\d+)?)$/i)
+    strategy :github_releases do |json, regex|
+      json.filter_map do |release|
+        release["tag_name"]&.[](regex, 1) unless release["draft"]
+      end
+    end
   end
 
   container type: :naked
