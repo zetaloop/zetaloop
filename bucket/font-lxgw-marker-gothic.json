@@ -1,10 +1,10 @@
 {
-    "version": "1.003",
+    "version": "1.004",
     "description": "LXGW Marker Gothic Chinese display font",
     "homepage": "https://github.com/lxgw/LxgwMarkerGothic",
     "license": "OFL-1.1",
-    "url": "https://github.com/lxgw/LxgwMarkerGothic/releases/download/v1.003/LxgwMarkerGothic-v1.003.zip",
-    "hash": "858f40c1b0a4c62a2949a13a071bfbc0075a096ab84b85a3f783688547f57444",
+    "url": "https://github.com/lxgw/LxgwMarkerGothic/releases/download/v1.004/LxgwMarkerGothic-v1.004.zip",
+    "hash": "4a30c82200664d5366ed8ef822ee2085ad16c767862396b96b8924fd94297aa6",
     "extract_dir": "LxgwMarkerGothic-v1.003/fonts/ttf",
     "installer": {
         "script": [
