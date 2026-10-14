@@ -1,9 +1,9 @@
 cask "xray-knife" do
   arch arm: "arm64-v8a", intel: "64"
 
-  version "11.3.0"
-  sha256 arm:   "1339fd4ad4e71a644499735fbc2795ac0719e22a15cf9a55eac4f1a17c9b6a33",
-         intel: "1119d7b7585b04cdbcd47628beb8599a760f7a86c22d1b49389a625ad1a6a237"
+  version "11.4.0"
+  sha256 arm:   "7918824d71e06e91dd5d64dff655049fba84765f2cf8ab21f0856e337bd32958",
+         intel: "4d6ccd06c744470d9ac0cea3b62a93d8e956688fb209981dbea63f61ed8b27a3"
 
   url "https://github.com/lilendian0x00/xray-knife/releases/download/v#{version}/Xray-knife-macos-#{arch}.zip"
   name "xray-knife"
