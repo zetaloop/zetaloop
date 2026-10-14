@@ -1,5 +1,5 @@
 cask "font-misans-tc" do
-  version "1.002"
+  version "4.009"
   sha256 "417831f033601f1738fefb2ce9158586d0143385a9dd0c4cfa985bcc16c7443b"
 
   url "https://hyperos.mi.com/font-download/MiSans_TC.zip"
