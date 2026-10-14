@@ -33,6 +33,8 @@ jobs:
           restore-keys: fonts-
       - name: Update fonts
         shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           uv run scripts/update-fonts.py
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

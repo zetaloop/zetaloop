@@ -1,5 +1,5 @@
 {
-    "version": "90abd17b4f97671435798b6147b698aa9087612f",
+    "version": "1.000",
     "description": "Sans-serif font for headings and small text",
     "homepage": "https://fonts.google.com/specimen/Varela",
     "license": "OFL-1.1",
@@ -13,12 +13,5 @@
     },
     "uninstaller": {
         "script": "& \"$dir\\install-fonts.ps1\" uninstall"
-    },
-    "checkver": {
-        "url": "https://api.github.com/repos/google/fonts/commits?path=ofl%2Fvarela%2FVarela-Regular.ttf&per_page=1",
-        "jsonpath": "$[0].sha"
-    },
-    "autoupdate": {
-        "url": "https://raw.githubusercontent.com/google/fonts/$version/ofl/varela/Varela-Regular.ttf"
     }
 }
