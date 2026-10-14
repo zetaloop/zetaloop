@@ -3,26 +3,25 @@
     "description": "Geometric sans-serif variable fonts with Montserrat Alternates",
     "homepage": "https://github.com/JulietaUla/Montserrat",
     "license": "OFL-1.1",
-    "url": [
-        "https://raw.githubusercontent.com/JulietaUla/Montserrat/v9.000/fonts/variable/Montserrat%5Bwght%5D.ttf#/Montserrat.ttf",
-        "https://raw.githubusercontent.com/JulietaUla/Montserrat/v9.000/fonts/variable/Montserrat-Italic%5Bwght%5D.ttf#/Montserrat-Italic.ttf",
-        "https://raw.githubusercontent.com/JulietaUla/Montserrat/v9.000/fonts-alternates/variable/MontserratAlternates%5Bwght%5D.ttf#/MontserratAlternates.ttf",
-        "https://raw.githubusercontent.com/JulietaUla/Montserrat/v9.000/fonts-alternates/variable/MontserratAlternates-Italic%5Bwght%5D.ttf#/MontserratAlternates-Italic.ttf"
-    ],
-    "hash": [
-        "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7",
-        "51607f316bc020e59f03cbf51543eecffbea501c0b31d73e5b82927c5cca442c",
-        "276f10d3c0a32104955bc065406b20e4797471368a221b54285dd9ef151c6b11",
-        "40af9ed2aab1cc49b4397274f4bac08dd5f349285583581e94670f5c7edba6d0"
-    ],
+    "url": "https://github.com/JulietaUla/Montserrat/archive/refs/tags/v9.000.tar.gz",
+    "hash": "991b3f971c65081c780fa15645a030bdf9e21ee8734b9f6010638b83bae1ff83",
+    "extract_dir": "Montserrat-9.000",
+    "pre_install": "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
     "installer": {
-        "script": [
-            "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
-            "& \"$dir\\install-fonts.ps1\" install"
+        "file": "install-fonts.ps1",
+        "args": [
+            "install",
+            "$dir\\fonts\\variable",
+            "$dir\\fonts-alternates\\variable"
         ]
     },
     "uninstaller": {
-        "script": "& \"$dir\\install-fonts.ps1\" uninstall"
+        "file": "install-fonts.ps1",
+        "args": [
+            "uninstall",
+            "$dir\\fonts\\variable",
+            "$dir\\fonts-alternates\\variable"
+        ]
     },
     "checkver": {
         "url": "https://api.github.com/repos/JulietaUla/Montserrat/tags?per_page=1",
@@ -30,11 +29,7 @@
         "regex": "v([\\d.]+)"
     },
     "autoupdate": {
-        "url": [
-            "https://raw.githubusercontent.com/JulietaUla/Montserrat/v$version/fonts/variable/Montserrat%5Bwght%5D.ttf#/Montserrat.ttf",
-            "https://raw.githubusercontent.com/JulietaUla/Montserrat/v$version/fonts/variable/Montserrat-Italic%5Bwght%5D.ttf#/Montserrat-Italic.ttf",
-            "https://raw.githubusercontent.com/JulietaUla/Montserrat/v$version/fonts-alternates/variable/MontserratAlternates%5Bwght%5D.ttf#/MontserratAlternates.ttf",
-            "https://raw.githubusercontent.com/JulietaUla/Montserrat/v$version/fonts-alternates/variable/MontserratAlternates-Italic%5Bwght%5D.ttf#/MontserratAlternates-Italic.ttf"
-        ]
+        "url": "https://github.com/JulietaUla/Montserrat/archive/refs/tags/v$version.tar.gz",
+        "extract_dir": "Montserrat-$version"
     }
 }

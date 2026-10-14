@@ -1,12 +1,14 @@
 param(
     [Parameter(Mandatory)]
     [ValidateSet('install', 'uninstall')]
-    [string] $Action
+    [string] $Action,
+    [Parameter(ValueFromRemainingArguments)]
+    [string[]] $Path = $PSScriptRoot
 )
 
 $ErrorActionPreference = 'Stop'
 $helper = Join-Path $PSScriptRoot 'fontctl.cs'
-$fonts = @(Get-ChildItem -LiteralPath $PSScriptRoot -Recurse -File | Where-Object { $_.Extension -in '.otf', '.ttf', '.ttc' -and !$_.Name.StartsWith('._') })
+$fonts = @(Get-ChildItem -LiteralPath $Path -Recurse -File | Where-Object { $_.Extension -in '.otf', '.ttf', '.ttc' -and !$_.Name.StartsWith('._') })
 
 if (!$fonts) { throw 'No font files found' }
 

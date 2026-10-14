@@ -14,6 +14,13 @@ brew livecheck --json --newer-only --full-name --tap="$tap" |
   while IFS=$'\t' read -r type package version; do
     if [[ $type == formula ]]; then
       brew bump-formula-pr --write-only --commit --version="$version" "$package"
+    elif [[ $package == "$tap"/font-* ]]; then
+      brew bump-cask-pr --write-only --version="$version" "$package"
+      python3 scripts/update-font-files.py "$package"
+      brew style --fix "$package"
+      name=${package##*/}
+      git add "Casks/$name.rb"
+      git -c user.name="$HOMEBREW_GIT_NAME" -c user.email="$HOMEBREW_GIT_EMAIL" commit -m "$name $version"
     else
       brew bump-cask-pr --write-only --commit --version="$version" "$package"
     fi
