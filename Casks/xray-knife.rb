@@ -15,5 +15,7 @@ cask "xray-knife" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   binary "xray-knife"
 end

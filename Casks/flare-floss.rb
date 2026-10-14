@@ -12,5 +12,7 @@ cask "flare-floss" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   binary "floss"
 end

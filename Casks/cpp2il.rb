@@ -20,6 +20,8 @@ cask "cpp2il" do
     end
   end
 
+  depends_on :macos
+
   container type: :naked
 
   binary "Cpp2IL-#{version}-OSX#{arch}", target: "cpp2il"
