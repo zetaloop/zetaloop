@@ -86,6 +86,12 @@ jobs:
           ref: main
       - name: Set up Nix
         uses: cachix/install-nix-action@v31.11.1
+      - name: Cache font metadata
+        uses: actions/cache@v6
+        with:
+          path: ${{ runner.temp }}/zetaloop-fonts.json
+          key: nix-fonts-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: nix-fonts-
       - name: Update packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

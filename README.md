@@ -86,7 +86,7 @@ nix registry add zetaloop github:zetaloop/zetaloop</code></pre></summary>
 - `pixpin` <kbd>scoop</kbd> (Freeware)
 - `notepadplusplus` <kbd>scoop</kbd> with windows 11 context menu
 - `vscode` <kbd>scoop</kbd> with proper identity and windows 11 context menu
-- Fonts <kbd>scoop</kbd> <kbd>brew</kbd>
+- Fonts <kbd>scoop</kbd> <kbd>brew</kbd> <kbd>nix</kbd>
   - Alibaba PuHuiTi
   - Fira Code
   - HarmonyOS Sans
@@ -107,5 +107,6 @@ nix registry add zetaloop github:zetaloop/zetaloop</code></pre></summary>
   - Victor Mono
   - `scoop (un)install font-all`
   - `brew (un)install-font-all`
+  - `nix fonts.packages = [zetaloop.packages.${system}.font-all];`
 
 </details></td></tr></tbody></table>

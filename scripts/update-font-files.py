@@ -6,8 +6,9 @@ from pathlib import Path, PurePosixPath
 from tempfile import TemporaryDirectory
 from urllib.parse import urlsplit
 
+from font_files import EXTENSIONS, font_files
+
 ROOT = Path(__file__).parent.parent
-EXTENSIONS = {".otf", ".ttf", ".ttc"}
 
 for package in sys.argv[1:]:
     info = json.loads(
@@ -39,25 +40,7 @@ for package in sys.argv[1:]:
             ["brew", "unpack", "--cask", f"--destdir={temporary}", package], check=True
         )
         root = Path(temporary) / f"{name}-{version}"
-        files = {
-            path.relative_to(root)
-            for path in root.rglob("*")
-            if path.is_file()
-            and path.suffix.lower() in EXTENSIONS
-            and not path.name.startswith("._")
-            and any(
-                path.relative_to(root).is_relative_to(scope) for scope in directories
-            )
-        }
-        folded = {path.as_posix().casefold() for path in files}
-        fonts = sorted(
-            path.as_posix()
-            for path in files
-            if path.suffix.lower() != ".otf"
-            or path.with_suffix(".ttf").as_posix().casefold() not in folded
-        )
-    if not fonts:
-        raise ValueError(f"No font files found for {package}")
+        fonts = [path.as_posix() for path in font_files(root, directories)]
 
     cask_path = ROOT / "Casks" / f"{name}.rb"
     cask = cask_path.read_text(encoding="utf-8")

@@ -10,4 +10,4 @@ for package in $packages; do
   nix-update "$package" --flake --use-update-script
 done
 
-nixfmt flake.nix pkgs/*.nix
+nixfmt flake.nix pkgs/*.nix pkgs/fonts/*.nix
