@@ -77,7 +77,7 @@ nix registry add zetaloop github:zetaloop/zetaloop</code></pre></summary>
 - `zsh` <kbd>scoop</kbd> powered by scoop `git`
 - `gup` <kbd>scoop</kbd> [nao1215/gup](https://github.com/nao1215/gup)
 - `xray-knife` <kbd>scoop</kbd> <kbd>brew</kbd> <kbd>nix</kbd> [lilendian0x00/xray-knife](https://github.com/lilendian0x00/xray-knife)
-- `ilspy`/`ilspycmd` <kbd>scoop</kbd> <kbd>brew</kbd> [icsharpcode/ILSpy](https://github.com/icsharpcode/ILSpy)
+- `ilspy`/`ilspycmd` <kbd>scoop</kbd> <kbd>brew</kbd> <kbd>nix</kbd> [icsharpcode/ILSpy](https://github.com/icsharpcode/ILSpy)
 - `cpp2il` <kbd>scoop</kbd> <kbd>brew</kbd> [SamboyCoding/Cpp2IL](https://github.com/SamboyCoding/Cpp2IL)
 - `goresym` <kbd>scoop</kbd> [mandiant/GoReSym](https://github.com/mandiant/GoReSym)
 - `capa` <kbd>scoop</kbd> <kbd>brew</kbd> [mandiant/capa](https://github.com/mandiant/capa)

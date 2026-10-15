@@ -8,6 +8,7 @@
   iptables,
   nftables,
   util-linux,
+  nix-update-script,
 }:
 
 let
@@ -63,6 +64,17 @@ stdenvNoCC.mkDerivation {
 
   passthru = {
     inherit sources;
+    updateScript = nix-update-script {
+      attrPath = "xray-knife";
+      extraArgs = [
+        "--flake"
+        "--no-src"
+      ]
+      ++ lib.concatMap (system: [
+        "--subpackage"
+        "sources.${system}"
+      ]) (builtins.attrNames sources);
+    };
   };
 
   meta = {

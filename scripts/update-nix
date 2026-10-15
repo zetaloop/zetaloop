@@ -4,15 +4,10 @@ set -euo pipefail
 nix flake update
 
 system=$(nix eval --raw --impure --expr builtins.currentSystem)
-packages=$(nix eval --raw ".#packages.$system" --apply 'p: builtins.concatStringsSep "\n" (builtins.attrNames p)')
+packages=$(nix eval --raw ".#packages.$system" --apply 'p: builtins.concatStringsSep "\n" (builtins.filter (name: builtins.hasAttr "updateScript" (builtins.getAttr name p)) (builtins.attrNames p))')
 
 for package in $packages; do
-  sources=$(nix eval --raw ".#$package.sources" --apply 's: builtins.concatStringsSep "\n" (builtins.attrNames s)')
-  args=(--flake --no-src)
-  for source in $sources; do
-    args+=(--subpackage "sources.$source")
-  done
-  nix-update "$package" "${args[@]}"
+  nix-update "$package" --flake --use-update-script
 done
 
 nixfmt flake.nix pkgs/*.nix
