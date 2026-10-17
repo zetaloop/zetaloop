@@ -1,6 +1,6 @@
 cask "flare-floss" do
-  version "3.1.1"
-  sha256 "1f272641485a70ad848d97ad4e5c89b69ae5a50b71e2e8f7b6ad650750af49d1"
+  version "3.2.0"
+  sha256 "dda11c1e07694b5eb9a9587f6c32dee01cc032376657e6d597f6f95cc0ed9c61"
 
   url "https://github.com/mandiant/flare-floss/releases/download/v#{version}/floss-v#{version}-macos.zip"
   name "FLOSS"
