@@ -1,10 +1,10 @@
 {
-    "version": "1.522",
+    "version": "1.530",
     "description": "LXGW WenKai Lite Chinese handwriting font family",
     "homepage": "https://github.com/lxgw/LxgwWenKai-Lite",
     "license": "OFL-1.1",
-    "url": "https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.522/lxgw-wenkai-lite-v1.522.zip",
-    "hash": "7c86ceeec54f2caa8b674b2a79bd82f4417815ab7c7330f80fede76ee4c9ea0b",
+    "url": "https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.530/lxgw-wenkai-lite-v1.530.zip",
+    "hash": "7fa084dfdb76f36a40c183dbb50cb5d2f92b2ea26553454988e08c889f8ed5fa",
     "installer": {
         "script": [
             "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
