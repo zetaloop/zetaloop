@@ -39,6 +39,7 @@
                   name = "font-all";
                   paths = builtins.attrValues fonts;
                 };
+                freedomharbor = pkgs.callPackage ./pkgs/freedomharbor.nix { };
                 ilspy = pkgs.callPackage ./pkgs/ilspy.nix { };
                 ilspycmd = pkgs.callPackage ./pkgs/ilspycmd.nix { };
                 xray-knife = pkgs.callPackage ./pkgs/xray-knife.nix { };

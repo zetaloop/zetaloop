@@ -72,6 +72,7 @@ nix registry add zetaloop github:zetaloop/zetaloop</code></pre></summary>
 
 - `chsimexx` <kbd>scoop</kbd> [zetaloop/ChsIMExx](https://github.com/zetaloop/ChsIMExx)
 - `scimxx` <kbd>brew</kbd> [zetaloop/SCIMxx](https://github.com/zetaloop/SCIMxx)
+- `freedomharbor` <kbd>nix</kbd> [zetaloop/FreedomHarbor](https://github.com/zetaloop/FreedomHarbor)
 - `msys2-argv-fix` <kbd>scoop</kbd> [zetaloop/msys2-argv-fix](https://github.com/zetaloop/msys2-argv-fix)
 - `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
 - `zsh` <kbd>scoop</kbd> powered by scoop `git`
