@@ -11,7 +11,7 @@ mkFont {
   pname = "font-lxgw-bright";
   inherit version;
   src = fetchurl {
-    url = "https://github.com/lxgw/LxgwBright/releases/download/v${version}/LXGWBright.7z";
+    url = "https://github.com/lxgw/LxgwBright/releases/download/${version}/LXGWBright.7z";
     hash = "sha256-pHa6liDc4Pu6dSL+V47VzHuhRRg2NhKvWD/gfqM5c+o=";
   };
 

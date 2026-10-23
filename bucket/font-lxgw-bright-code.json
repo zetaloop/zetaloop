@@ -16,6 +16,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/lxgw/LxgwBright-Code/releases/download/v$version/LxgwBrightCode.7z"
+        "url": "https://github.com/lxgw/LxgwBright-Code/releases/download/$version/LxgwBrightCode.7z"
     }
 }
