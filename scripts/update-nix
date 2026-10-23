@@ -3,6 +3,9 @@ set -euo pipefail
 
 nix flake update
 
+NIX_PATH="nixpkgs=$(nix eval --raw --impure --expr '(builtins.getFlake (toString ./.)).inputs.nixpkgs.outPath')"
+export NIX_PATH
+
 system=$(nix eval --raw --impure --expr builtins.currentSystem)
 packages=$(nix eval --raw ".#packages.$system" --apply 'p: builtins.concatStringsSep "\n" (builtins.filter (name: builtins.hasAttr "updateScript" (builtins.getAttr name p)) (builtins.attrNames p))')
 
