@@ -1,5 +1,5 @@
 {
-    "version": "1.142.0",
+    "version": "1.143.1",
     "description": "Lightweight but powerful source code editor",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://update.code.visualstudio.com/1.142.0/win32-x64-archive/stable#/dl.7z",
-            "hash": "ace1da7d1432d43c1ab4b2bbf643f6494f6d25dec07494976755eac522cd50d9"
+            "url": "https://update.code.visualstudio.com/1.143.1/win32-x64-archive/stable#/dl.7z",
+            "hash": "b4f9643b8a549ca2c85a1bbc9063fc76f1e08fc0036a7f6a1a181cdc05235eca"
         },
         "arm64": {
-            "url": "https://update.code.visualstudio.com/1.142.0/win32-arm64-archive/stable#/dl.7z",
-            "hash": "06e1323f2cfa095c371ebbe0f33f3da3c19ea266ea6999a4e7f25329b787d645"
+            "url": "https://update.code.visualstudio.com/1.143.1/win32-arm64-archive/stable#/dl.7z",
+            "hash": "7fb088c5274f9dd1fb9e15ae49694c7ca3bfe0f7b506137a3b85655a7be7e50e"
         }
     },
     "pre_install": "'vscode.ps1', 'vscode-registry.json' | ForEach-Object { Copy-Item \"$bucketsdir\\zetaloop\\scripts\\$_\" $dir }",
