@@ -1,10 +1,10 @@
 {
-    "version": "5.528",
+    "version": "26.10.22",
     "description": "LXGW Bright CJK sans-serif font family",
     "homepage": "https://github.com/lxgw/LxgwBright",
     "license": "OFL-1.1",
-    "url": "https://github.com/lxgw/LxgwBright/releases/download/v5.528/LXGWBright.7z",
-    "hash": "a476ba9620dce0fbba7522fe578ed5cc7ba14518363612af583fe07ea33973ea",
+    "url": "https://github.com/lxgw/LxgwBright/releases/download/26.10.22/LXGWBright.7z",
+    "hash": "cbd632f0c0f08f111329cbb0fc63cdec28be89cced3533b2c00f05e8eaf237fb",
     "installer": {
         "script": [
             "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
