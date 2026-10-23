@@ -5,14 +5,14 @@
 }:
 
 let
-  version = "1.305";
+  version = "1.306";
 in
 mkFont {
   pname = "font-lxgw-neoxihei-plus";
   inherit version;
   src = fetchurl {
     url = "https://github.com/lxgw/LxgwNeoXiHei/releases/download/v${version}/LXGWNeoXiHeiPlus.ttf";
-    hash = "sha256-aCYa3UB715XAQP5mK34h5admrMmlNMOTRz+Klyxe0iQ=";
+    hash = "sha256-wmoPgVF0MTJx/fRI1D6qSckhFe7fuH9Q2eC/ORMeU/Q=";
   };
 
   meta = {

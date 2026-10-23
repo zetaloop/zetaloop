@@ -6,14 +6,14 @@
 }:
 
 let
-  version = "1.067";
+  version = "1.068";
 in
 mkFont {
   pname = "font-lxgw-neozhisong-plus";
   inherit version;
   src = fetchurl {
     url = "https://github.com/lxgw/LxgwNeoZhiSong/releases/download/v${version}/LXGWNeoZhiSongPlus.ttf";
-    hash = "sha256-Y5WVxlABhy0NoW2srrfeO6OWxkw3twoW/rFTYJG7bB8=";
+    hash = "sha256-CKd65yM9hLEym3rEMJerfDzOS/yOabrXheq0Lvg0kRk=";
   };
 
   postPatch = ''

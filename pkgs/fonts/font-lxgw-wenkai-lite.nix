@@ -5,14 +5,14 @@
 }:
 
 let
-  version = "1.522";
+  version = "1.530";
 in
 mkFont {
   pname = "font-lxgw-wenkai-lite";
   inherit version;
   src = fetchurl {
     url = "https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v${version}/lxgw-wenkai-lite-v${version}.zip";
-    hash = "sha256-fIbO7sVPLKqLZ0sqeb2C9EF4Fat8czD4D+3nbuTJ6gs=";
+    hash = "sha256-f6CE39t282pAwYPbtQy10vkrLqJlU0VJiOCMiJ+O1fo=";
   };
 
   meta = {
