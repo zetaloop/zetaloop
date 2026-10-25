@@ -1,10 +1,10 @@
 {
-    "version": "34.9.0",
+    "version": "34.9.1",
     "description": "Terminal monospace variant of Iosevka",
     "homepage": "https://typeof.net/Iosevka/",
     "license": "OFL-1.1",
-    "url": "https://github.com/be5invis/Iosevka/releases/download/v34.9.0/SuperTTC-SGr-IosevkaTerm-34.9.0.zip",
-    "hash": "daba270fcf8c471bf7a3d27055e90dbe64ea11205d44f1ec1061892d089bbe92",
+    "url": "https://github.com/be5invis/Iosevka/releases/download/v34.9.1/SuperTTC-SGr-IosevkaTerm-34.9.1.zip",
+    "hash": "bb4036bf968571653c02f6c4662b1970485295ad98d746c741734a32bb815c9c",
     "installer": {
         "script": [
             "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
