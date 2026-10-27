@@ -1,8 +1,8 @@
 class Ilspycmd < Formula
   desc "Command-line .NET assembly decompiler"
   homepage "https://github.com/icsharpcode/ILSpy"
-  url "https://api.nuget.org/v3-flatcontainer/ilspycmd/11.1.0.9782/ilspycmd.11.1.0.9782.nupkg"
-  sha256 "74c07facaf1850c78a779fc509031f756e1c0de24b1a536f3363d7ef81ce001f"
+  url "https://api.nuget.org/v3-flatcontainer/ilspycmd/11.2.0.10050/ilspycmd.11.2.0.10050.nupkg"
+  sha256 "3196165768e5a818f8e8f101f999aa9cd2808a8f9568ae1c4998bbbcc68a5953"
   license "MIT"
 
   livecheck do
