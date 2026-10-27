@@ -1,6 +1,6 @@
 cask "ilspy" do
-  version "11.1.0.9782"
-  sha256 "f908866dcedea6a3edb62a5cee9c3a91fe4564156b8284bab030aaa373342337"
+  version "11.2.0.10050"
+  sha256 "3f027113aa25dd16ed7d6fc6539f28fcc795026014f66772af40367a3db9093c"
 
   url "https://github.com/icsharpcode/ILSpy/releases/download/v#{version.major_minor}/ILSpy_macos-arm64_#{version}.zip"
   name "ILSpy"
