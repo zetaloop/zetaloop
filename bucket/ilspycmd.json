@@ -1,10 +1,10 @@
 {
-    "version": "11.1.0.9782",
+    "version": "11.2.0.10050",
     "description": "Command-line .NET assembly decompiler",
     "homepage": "https://github.com/icsharpcode/ILSpy",
     "license": "MIT",
-    "url": "https://api.nuget.org/v3-flatcontainer/ilspycmd/11.1.0.9782/ilspycmd.11.1.0.9782.nupkg#/dl.7z",
-    "hash": "74c07facaf1850c78a779fc509031f756e1c0de24b1a536f3363d7ef81ce001f",
+    "url": "https://api.nuget.org/v3-flatcontainer/ilspycmd/11.2.0.10050/ilspycmd.11.2.0.10050.nupkg#/dl.7z",
+    "hash": "3196165768e5a818f8e8f101f999aa9cd2808a8f9568ae1c4998bbbcc68a5953",
     "extract_dir": "tools\\net10.0\\any",
     "pre_install": [
         "$dotnet = (Get-Command dotnet.exe -ErrorAction Stop).Source",
