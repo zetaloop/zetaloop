@@ -28,7 +28,7 @@
 }:
 
 let
-  version = "11.1.0.9782";
+  version = "11.2.0.10050";
   libraries = [
     stdenv.cc.cc.lib
     zlib
@@ -52,7 +52,7 @@ stdenvNoCC.mkDerivation {
   inherit version;
   src = fetchurl {
     url = "https://github.com/icsharpcode/ILSpy/releases/download/v${lib.versions.majorMinor version}/ilspy_${version}-1_amd64.deb";
-    hash = "sha256-cmaW1aYhRtr2J9BtJV+jwYJT9jO4YV9IsxOCrojvUUE=";
+    hash = "sha256-83qygJ8+Yq5HmGs8WpdvzqSIJvjEjlUhqQf0PlO5h94=";
   };
 
   nativeBuildInputs = [

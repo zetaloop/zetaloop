@@ -11,7 +11,7 @@
 }:
 
 let
-  version = "11.1.0.9782";
+  version = "11.2.0.10050";
 in
 stdenvNoCC.mkDerivation {
   pname = "ilspycmd";
@@ -19,7 +19,7 @@ stdenvNoCC.mkDerivation {
   src = fetchurl {
     name = "ilspycmd-${version}.zip";
     url = "https://api.nuget.org/v3-flatcontainer/ilspycmd/${version}/ilspycmd.${version}.nupkg";
-    hash = "sha256-dMB/rK8YUMeKd5/FCQMfdW4cDeJLGlNvM2PX74HOAB8=";
+    hash = "sha256-MZYWV2jlqBj46PEB+ZmqnNKAio+VaK4cSZi7vMaKWVM=";
   };
 
   nativeBuildInputs = [ unzip ];
