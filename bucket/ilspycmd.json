@@ -3,8 +3,8 @@
     "description": "Command-line .NET assembly decompiler",
     "homepage": "https://github.com/icsharpcode/ILSpy",
     "license": "MIT",
-    "url": "https://api.nuget.org/v3-flatcontainer/ilspycmd/11.2.0.10050/ilspycmd.11.2.0.10050.nupkg#/dl.7z",
-    "hash": "3196165768e5a818f8e8f101f999aa9cd2808a8f9568ae1c4998bbbcc68a5953",
+    "url": "https://api.nuget.org/v3-flatcontainer/ilspycmd.any/11.2.0.10050/ilspycmd.any.11.2.0.10050.nupkg#/dl.7z",
+    "hash": "d4015f1c63aa2211c1c692321ecc28f3c241ae586d441f50c5ac50383ad00388",
     "extract_dir": "tools\\net10.0\\any",
     "pre_install": [
         "$dotnet = (Get-Command dotnet.exe -ErrorAction Stop).Source",
@@ -13,11 +13,11 @@
     ],
     "bin": "ilspycmd.exe",
     "checkver": {
-        "url": "https://api.nuget.org/v3-flatcontainer/ilspycmd/index.json",
+        "url": "https://api.nuget.org/v3-flatcontainer/ilspycmd.any/index.json",
         "regex": "\"(\\d+(?:\\.\\d+)+)\"",
         "reverse": true
     },
     "autoupdate": {
-        "url": "https://api.nuget.org/v3-flatcontainer/ilspycmd/$version/ilspycmd.$version.nupkg#/dl.7z"
+        "url": "https://api.nuget.org/v3-flatcontainer/ilspycmd.any/$version/ilspycmd.any.$version.nupkg#/dl.7z"
     }
 }

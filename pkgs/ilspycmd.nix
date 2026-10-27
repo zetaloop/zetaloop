@@ -18,8 +18,8 @@ stdenvNoCC.mkDerivation {
   inherit version;
   src = fetchurl {
     name = "ilspycmd-${version}.zip";
-    url = "https://api.nuget.org/v3-flatcontainer/ilspycmd/${version}/ilspycmd.${version}.nupkg";
-    hash = "sha256-MZYWV2jlqBj46PEB+ZmqnNKAio+VaK4cSZi7vMaKWVM=";
+    url = "https://api.nuget.org/v3-flatcontainer/ilspycmd.any/${version}/ilspycmd.any.${version}.nupkg";
+    hash = "sha256-1AFfHGOqIhHBxpIyHswo88JBrlhtRB9QxaxQODrQA4g=";
   };
 
   nativeBuildInputs = [ unzip ];
@@ -42,7 +42,7 @@ stdenvNoCC.mkDerivation {
       nix-update
     ];
     text = ''
-      version=$(curl --fail --silent --show-error https://api.nuget.org/v3-flatcontainer/ilspycmd/index.json |
+      version=$(curl --fail --silent --show-error https://api.nuget.org/v3-flatcontainer/ilspycmd.any/index.json |
         jq -er '[.versions[] | select(test("^[0-9]+(\\.[0-9]+)+$"))] | last')
       nix-update "$UPDATE_NIX_ATTR_PATH" --flake --version="$version"
     '';
