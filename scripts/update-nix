@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-nix flake update
+nix flake update --commit-lock-file
 
 NIX_PATH="nixpkgs=$(nix eval --raw --impure --expr '(builtins.getFlake (toString ./.)).inputs.nixpkgs.outPath')"
 export NIX_PATH
@@ -9,8 +9,12 @@ export NIX_PATH
 system=$(nix eval --raw --impure --expr builtins.currentSystem)
 packages=$(nix eval --raw ".#packages.$system" --apply 'p: builtins.concatStringsSep "\n" (builtins.filter (name: builtins.hasAttr "updateScript" (builtins.getAttr name p)) (builtins.attrNames p))')
 
-for package in $packages; do
-  nix-update "$package" --flake --use-update-script
-done
+message=$(mktemp)
+trap 'rm -f "$message"' EXIT
 
-nixfmt flake.nix pkgs/*.nix pkgs/fonts/*.nix
+for package in $packages; do
+  nix-update "$package" --flake --use-update-script --format --write-commit-message "$message"
+  git diff --quiet -- pkgs && continue
+  git add pkgs
+  git commit --file "$message"
+done
