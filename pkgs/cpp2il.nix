@@ -87,6 +87,7 @@ stdenvNoCC.mkDerivation {
         versions=$(curl --fail --silent --show-error "''${headers[@]}" https://api.github.com/repos/SamboyCoding/Cpp2IL/releases |
           jq -ec '[.[] | select(.draft | not) | .tag_name | select(test("^[0-9]+(\\.[0-9]+)+(-pre-release\\.[0-9]+)?$"))] | tojson')
         version=$(nix eval --raw --expr "builtins.head (builtins.sort (a: b: builtins.compareVersions a b > 0) (builtins.fromJSON $versions))")
+        [[ $version == "$UPDATE_NIX_OLD_VERSION" ]] && exit 0
         nix-update "$UPDATE_NIX_ATTR_PATH" --flake --version="$version" --no-src ${
           lib.escapeShellArgs (
             lib.concatMap (system: [

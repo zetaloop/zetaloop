@@ -1,20 +1,30 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-nix flake update --commit-lock-file
-
-NIX_PATH="nixpkgs=$(nix eval --raw --impure --expr '(builtins.getFlake (toString ./.)).inputs.nixpkgs.outPath')"
-export NIX_PATH
-
-system=$(nix eval --raw --impure --expr builtins.currentSystem)
-packages=$(nix eval --raw ".#packages.$system" --apply 'p: builtins.concatStringsSep "\n" (builtins.filter (name: builtins.hasAttr "updateScript" (builtins.getAttr name p)) (builtins.attrNames p))')
+packages=$(nix build --no-link --print-out-paths --impure --expr '
+  let
+    flake = builtins.getFlake (toString ./.);
+    pkgs = import flake.inputs.nixpkgs { };
+    packages = builtins.getAttr builtins.currentSystem flake.packages;
+    scripts = pkgs.lib.mapAttrsToList (attr: package: {
+      inherit attr;
+      inherit (package) name pname version;
+      command = pkgs.lib.toList (package.updateScript.command or package.updateScript);
+    }) (pkgs.lib.filterAttrs (_: package: package ? updateScript) packages);
+  in
+  pkgs.writeText "update-scripts.json" (builtins.toJSON scripts)
+')
 
 message=$(mktemp)
 trap 'rm -f "$message"' EXIT
 
-for package in $packages; do
-  nix-update "$package" --flake --use-update-script --format --write-commit-message "$message"
+while IFS= read -r package; do
+  IFS=$'\t' read -r attr name pname version < <(jq -r '[.attr, .name, .pname, .version] | @tsv' <<< "$package")
+  mapfile -t command < <(jq -r '.command[]' <<< "$package")
+  UPDATE_NIX_NAME="$name" UPDATE_NIX_PNAME="$pname" UPDATE_NIX_OLD_VERSION="$version" UPDATE_NIX_ATTR_PATH="$attr" "${command[@]}"
   git diff --quiet -- pkgs && continue
+  new_version=$(nix eval --raw ".#$attr.version")
+  nix-update "$attr" --flake --version="$new_version" --no-src --format --write-commit-message "$message"
   git add pkgs
   git commit --file "$message"
-done
+done < <(jq -c '.[]' "$packages")

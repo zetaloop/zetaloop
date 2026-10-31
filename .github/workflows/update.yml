@@ -98,5 +98,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          nix shell --inputs-from . nixpkgs#nix-update nixpkgs#nixfmt -c scripts/update-nix
+          nix flake update --commit-lock-file
+          nix shell --inputs-from . nixpkgs#nix-update nixpkgs#nixfmt nixpkgs#jq -c scripts/update-nix
           git push

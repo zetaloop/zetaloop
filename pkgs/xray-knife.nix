@@ -8,7 +8,9 @@
   iptables,
   nftables,
   util-linux,
-  nix-update-script,
+  nix,
+  nix-update,
+  writeShellApplication,
 }:
 
 let
@@ -64,17 +66,26 @@ stdenvNoCC.mkDerivation {
 
   passthru = {
     inherit sources;
-    updateScript = nix-update-script {
-      attrPath = "xray-knife";
-      extraArgs = [
-        "--flake"
-        "--no-src"
-      ]
-      ++ lib.concatMap (system: [
-        "--subpackage"
-        "sources.${system}"
-      ]) (builtins.attrNames sources);
-    };
+    updateScript = lib.getExe (writeShellApplication {
+      name = "update-xray-knife";
+      runtimeInputs = [
+        nix
+        nix-update
+      ];
+      text = ''
+        nix-update "$UPDATE_NIX_ATTR_PATH" --flake --no-src
+        version=$(nix eval --raw ".#$UPDATE_NIX_ATTR_PATH.version")
+        [[ $version == "$UPDATE_NIX_OLD_VERSION" ]] && exit 0
+        nix-update "$UPDATE_NIX_ATTR_PATH" --flake --no-src --version=skip ${
+          lib.escapeShellArgs (
+            lib.concatMap (system: [
+              "--subpackage"
+              "sources.${system}"
+            ]) (builtins.attrNames sources)
+          )
+        }
+      '';
+    });
   };
 
   meta = {
