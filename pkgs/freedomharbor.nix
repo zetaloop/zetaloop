@@ -6,7 +6,7 @@
 }:
 
 let
-  version = "0.1.1";
+  version = "0.1.2";
   sources =
     lib.mapAttrs
       (
@@ -21,11 +21,11 @@ let
       {
         x86_64-linux = {
           arch = "x86_64";
-          hash = "sha256-bBhtZIKeNfPGWXGEZoiFb+7OOAVPfKSROiBQRKmdilg=";
+          hash = "sha256-35gPJjcDATQl+ST3DOQvEScEs1sP7cGltlxkoiTo2vE=";
         };
         aarch64-linux = {
           arch = "aarch64";
-          hash = "sha256-QVsN0EJ1TD4FmqEpN0nIOU9P2b06LJJmAe6Igt90D4E=";
+          hash = "sha256-ttOXwj3kdBrWz4EwO4koWAk0BbHAkGaT6obkY5GiOUs=";
         };
       };
 in
