@@ -1,6 +1,6 @@
 cask "font-lxgw-marker-gothic" do
-  version "1.004"
-  sha256 "4a30c82200664d5366ed8ef822ee2085ad16c767862396b96b8924fd94297aa6"
+  version "1.011"
+  sha256 "52f09b47abef9292c7eb547bb88ba971e4014095dc672bdc99d68cc58bb5891c"
 
   url "https://github.com/lxgw/LxgwMarkerGothic/releases/download/v#{version}/LxgwMarkerGothic-v#{version}.zip"
   name "LXGW Marker Gothic"
