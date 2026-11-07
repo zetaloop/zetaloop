@@ -1,8 +1,11 @@
 cask "detect-it-easy" do
-  version "3.21"
-  sha256 "9b6411f4976593988fbcdc8d1ed2fd8123996e4b9f4a43df6a841460c229794b"
+  arch arm: "arm64", intel: "x86_64"
 
-  url "https://github.com/horsicq/DIE-engine/releases/download/#{version}/die_mac_qt6_#{version}_arm64.pkg"
+  version "4.0.0"
+  sha256 arm:   "b9c3f8b651d960a3b72e54a79a8c06a9ad0c6b1d7a29358823e840aa69aadcbc",
+         intel: "9ae0383eecb2132f688d4abd1a8fcc95cf8910c7846ed85efc70ab8e7c5bb45e"
+
+  url "https://github.com/horsicq/DIE-engine/releases/download/#{version}/die_#{version}_mac_#{arch}_qt6.dmg"
   name "Detect It Easy"
   desc "File identification and static inspection tool"
   homepage "https://github.com/horsicq/Detect-It-Easy"
@@ -12,12 +15,8 @@ cask "detect-it-easy" do
     strategy :github_latest
   end
 
-  depends_on arch: :arm64
   depends_on macos: :ventura
 
-  pkg "die_mac_qt6_#{version}_arm64.pkg"
-  binary "/Applications/DiE.app/Contents/MacOS/diec"
-
-  uninstall quit:    "com.yourcompany.DiE",
-            pkgutil: "ntinfo.die"
+  app "die.app"
+  binary "#{appdir}/die.app/Contents/MacOS/diec"
 end
