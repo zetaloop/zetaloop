@@ -1,16 +1,16 @@
 {
-    "version": "8.9.8.1",
+    "version": "8.9.9",
     "description": "A free source code editor and Notepad replacement that supports several languages.",
     "homepage": "https://notepad-plus-plus.org",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.8.1/npp.8.9.8.1.Installer.x64.exe#/installer.7z",
-            "hash": "26f3bcced788fadbac4e7e577b430ea2ce6060cf3bcad993ef4612ecd7d743da"
+            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9/npp.8.9.9.Installer.x64.exe#/installer.7z",
+            "hash": "a18cfb33d616c8eecda0059604d40bdb9d607fbc4ede857c8be6e41986464367"
         },
         "arm64": {
-            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.8.1/npp.8.9.8.1.Installer.arm64.exe#/installer.7z",
-            "hash": "a53c5116b55ac93fedd7808e71096badecbf10a55f2be9b28b741591b8917a73"
+            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9/npp.8.9.9.Installer.arm64.exe#/installer.7z",
+            "hash": "4d7bccb7d2f7c2c275369ec930332bea42061f97b1609e3bc4120652978addd1"
         }
     },
     "extract_to": "_installer",
