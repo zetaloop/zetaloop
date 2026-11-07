@@ -1,0 +1,45 @@
+{
+    "version": "4.0.0",
+    "description": "File identification and static inspection tool",
+    "homepage": "https://github.com/horsicq/Detect-It-Easy",
+    "license": "MIT",
+    "architecture": {
+        "arm64": {
+            "url": "https://github.com/horsicq/DIE-engine/releases/download/4.0.0/die_winarm64_qt6_4.0.0.zip",
+            "hash": "0ffdcb9592902568b92662c51cded662facc7a78fc5e4265945ea403d2ab3846"
+        },
+        "64bit": {
+            "url": "https://github.com/horsicq/DIE-engine/releases/download/4.0.0/die_win64_qt6_4.0.0.zip",
+            "hash": "d0370ff2cf3e0aee9d75ad71de6d8a9769e41b1974cad54c058680ed55f5af98"
+        }
+    },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\die.ini\")) { New-Item \"$dir\\die.ini\" -ItemType File | Out-Null }",
+    "bin": [
+        "die.exe",
+        "diec.exe",
+        "diel.exe"
+    ],
+    "shortcuts": [
+        [
+            "die.exe",
+            "Detect It Easy"
+        ]
+    ],
+    "persist": [
+        "die.ini",
+        "db_custom"
+    ],
+    "checkver": {
+        "github": "https://github.com/horsicq/DIE-engine"
+    },
+    "autoupdate": {
+        "architecture": {
+            "arm64": {
+                "url": "https://github.com/horsicq/DIE-engine/releases/download/$version/die_winarm64_qt6_$version.zip"
+            },
+            "64bit": {
+                "url": "https://github.com/horsicq/DIE-engine/releases/download/$version/die_win64_qt6_$version.zip"
+            }
+        }
+    }
+}

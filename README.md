@@ -83,7 +83,7 @@ nix registry add zetaloop github:zetaloop/zetaloop</code></pre></summary>
 - `goresym` <kbd>scoop</kbd> [mandiant/GoReSym](https://github.com/mandiant/GoReSym)
 - `capa` <kbd>scoop</kbd> <kbd>brew</kbd> [mandiant/capa](https://github.com/mandiant/capa)
 - `flare-floss` <kbd>scoop</kbd> <kbd>brew</kbd> [mandiant/flare-floss](https://github.com/mandiant/flare-floss)
-- `detect-it-easy` <kbd>brew</kbd> [horsicq/Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy)
+- `detect-it-easy` <kbd>scoop</kbd> <kbd>brew</kbd> [horsicq/Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy)
 - `pixpin` <kbd>scoop</kbd> (Freeware)
 - `notepadplusplus` <kbd>scoop</kbd> with windows 11 context menu
 - `vscode` <kbd>scoop</kbd> with proper identity and windows 11 context menu
