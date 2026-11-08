@@ -34,6 +34,7 @@
                     ) (builtins.readDir ./pkgs/fonts)
                   );
               packages = fonts // {
+                buoy = pkgs.callPackage ./pkgs/buoy.nix { };
                 cpp2il = pkgs.callPackage ./pkgs/cpp2il.nix { };
                 font-all = pkgs.symlinkJoin {
                   name = "font-all";
