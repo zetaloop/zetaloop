@@ -1,0 +1,4 @@
+export PATH=/usr/bin:$1:$PATH
+shift
+
+exec "${0%/*}/usr/bin/tmux.exe" "$@"

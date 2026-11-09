@@ -77,6 +77,7 @@ nix registry add zetaloop github:zetaloop/zetaloop</code></pre></summary>
 - `msys2-argv-fix` <kbd>scoop</kbd> [zetaloop/msys2-argv-fix](https://github.com/zetaloop/msys2-argv-fix)
 - `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
 - `zsh` <kbd>scoop</kbd> powered by scoop `git`
+- `tmux` <kbd>scoop</kbd> powered by scoop `git`
 - `gup` <kbd>scoop</kbd> [nao1215/gup](https://github.com/nao1215/gup)
 - `xray-knife` <kbd>scoop</kbd> <kbd>brew</kbd> <kbd>nix</kbd> [lilendian0x00/xray-knife](https://github.com/lilendian0x00/xray-knife)
 - `ilspy`/`ilspycmd` <kbd>scoop</kbd> <kbd>brew</kbd> <kbd>nix</kbd> [icsharpcode/ILSpy](https://github.com/icsharpcode/ILSpy)

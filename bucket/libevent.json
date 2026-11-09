@@ -1,0 +1,25 @@
+{
+    "version": "2.1.13-1",
+    "description": "Event notification library for Git for Windows",
+    "homepage": "https://libevent.org/",
+    "license": "BSD-3-Clause",
+    "depends": "main/git",
+    "architecture": {
+        "64bit": {
+            "url": "https://mirror.msys2.org/msys/x86_64/libevent-2.1.13-1-x86_64.pkg.tar.zst",
+            "hash": "ce967e0bbeb4cf396a42e6cd7516b6bbcef23237bf0a55099adbdfe1e9b3fce3"
+        }
+    },
+    "pre_install": "if ([Runtime.InteropServices.RuntimeInformation]::OSArchitecture -eq 'Arm64') { abort \"MSYS2 does not publish an ARM64 libevent package.\" }",
+    "checkver": {
+        "url": "https://packages.msys2.org/packages/libevent?variant=x86_64",
+        "regex": "msys/x86_64/libevent-([\\d.]+-\\d+)-x86_64\\.pkg\\.tar\\.zst"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://mirror.msys2.org/msys/x86_64/libevent-$version-x86_64.pkg.tar.zst"
+            }
+        }
+    }
+}
