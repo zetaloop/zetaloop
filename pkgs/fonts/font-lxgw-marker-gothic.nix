@@ -5,14 +5,14 @@
 }:
 
 let
-  version = "1.011-fix.1";
+  version = "1.012";
 in
 mkFont {
   pname = "font-lxgw-marker-gothic";
   inherit version;
   src = fetchurl {
     url = "https://github.com/lxgw/LxgwMarkerGothic/releases/download/v${version}/LxgwMarkerGothic-v${version}.zip";
-    hash = "sha256-W0gnrlGniHPos78zyhWEckInbJBUFoDsTVrZ/VrlHdQ=";
+    hash = "sha256-oc28NHHbc5DyNYzhjbFzqiGQb2dlJDS/m+rmGREgHaE=";
   };
 
   fontDirectories = [
