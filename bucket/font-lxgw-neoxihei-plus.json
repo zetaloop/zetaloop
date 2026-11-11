@@ -1,10 +1,10 @@
 {
-    "version": "1.308",
+    "version": "1.309",
     "description": "Extended LXGW Neo XiHei Chinese sans-serif font",
     "homepage": "https://github.com/lxgw/LxgwNeoXiHei",
     "license": "IPA",
-    "url": "https://github.com/lxgw/LxgwNeoXiHei/releases/download/v1.308/LXGWNeoXiHeiPlus.ttf",
-    "hash": "4dc82a80d297c0a679ff69a9d746246dd76472a865b2b2b208e5efc14f2068c1",
+    "url": "https://github.com/lxgw/LxgwNeoXiHei/releases/download/v1.309/LXGWNeoXiHeiPlus.ttf",
+    "hash": "868d537bbe7ea83a35a249fca829729ead9337828e0c4709f29be2277c117243",
     "installer": {
         "script": [
             "Copy-Item (Join-Path (Find-BucketDirectory $bucket -Root) \"scripts\\install-fonts.ps1\") $dir -ErrorAction Stop",
