@@ -14,6 +14,10 @@ packages=$(nix build --no-link --print-out-paths --impure --expr '
   in
   pkgs.writeText "update-scripts.json" (builtins.toJSON scripts)
 ')
+nix_update=$(nix build --no-link --print-out-paths --impure --expr '
+  (import (builtins.getFlake (toString ./.)).inputs.nixpkgs { overlays = [ (import ./overlay.nix) ]; }).nix-update
+')
+PATH="$nix_update/bin:$PATH"
 
 message=$(mktemp)
 trap 'rm -f "$message"' EXIT

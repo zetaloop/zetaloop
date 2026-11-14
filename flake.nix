@@ -18,6 +18,7 @@
               pkgs = import nixpkgs {
                 inherit system;
                 config.allowUnfree = true;
+                overlays = [ (import ./overlay.nix) ];
               };
               mkFont = pkgs.callPackage ./pkgs/font.nix { };
               fonts =
