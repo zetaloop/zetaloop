@@ -1,7 +1,7 @@
 <table align="center">
   <td colspan="6">
     <h3><p align="center"><code>✨Welcome to Zetaloop🦊</code></p></h3>
-    <p align="center">Some random fox chasing fun and breaking things.</p>
+    <p align="center">Some random fox chasing fun and bℝℯ∀k!ηᵹ things.</p>
     <p align="center">Feel free to interrupt me ;3</p>
     <p align="center">热衷于研究一些不太规矩的东西</p>
     <p align="center">可爱小狐狸出没，欢迎来戳</p>
