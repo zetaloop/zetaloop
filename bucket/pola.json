@@ -1,0 +1,40 @@
+{
+    "version": "0.1.0",
+    "description": "Windows light and dark appearance automation",
+    "homepage": "https://github.com/zetaloop/pola",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zetaloop/pola/releases/download/v0.1.0/pola-windows-x86_64.zip",
+            "hash": "2a7d99e1aad1167bd830e0493ebc4fa382d879cefac44a9bb0ec6a0581c952ff"
+        }
+    },
+    "persist": "data",
+    "pre_uninstall": [
+        "$processes = Get-Process -Name pola -ErrorAction SilentlyContinue",
+        "if ($processes) { $processes | Stop-Process -Force -ErrorAction SilentlyContinue; $processes | Wait-Process -ErrorAction SilentlyContinue }",
+        "$startup = [Environment]::GetFolderPath('Startup')",
+        "Remove-Item (Join-Path $startup 'Pola.lnk') -Force -ErrorAction SilentlyContinue"
+    ],
+    "post_install": [
+        "$startup = [Environment]::GetFolderPath('Startup')",
+        "$shortcut = (New-Object -ComObject WScript.Shell).CreateShortcut((Join-Path $startup 'Pola.lnk'))",
+        "$shortcut.TargetPath = Join-Path $dir 'pola.exe'",
+        "$shortcut.WorkingDirectory = Join-Path $persist_dir 'data'",
+        "$shortcut.Save()",
+        "Start-Process -FilePath $shortcut.TargetPath -WorkingDirectory $shortcut.WorkingDirectory"
+    ],
+    "checkver": {
+        "github": "https://github.com/zetaloop/pola"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zetaloop/pola/releases/download/v$version/pola-windows-x86_64.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
