@@ -73,6 +73,7 @@ nix registry add zetaloop github:zetaloop/zetaloop</code></pre></summary>
 - `chsimexx` <kbd>scoop</kbd> [zetaloop/ChsIMExx](https://github.com/zetaloop/ChsIMExx)
 - `scimxx` <kbd>brew</kbd> [zetaloop/SCIMxx](https://github.com/zetaloop/SCIMxx)
 - `pola` <kbd>scoop</kbd> [zetaloop/pola](https://github.com/zetaloop/pola)
+- `overcast` <kbd>scoop</kbd> <kbd>brew</kbd> <kbd>nix</kbd> [zetaloop/overcast](https://github.com/zetaloop/overcast)
 - `freedomharbor` <kbd>nix</kbd> [zetaloop/FreedomHarbor](https://github.com/zetaloop/FreedomHarbor)
 - `buoy` <kbd>nix</kbd> [zetaloop/Buoy](https://github.com/zetaloop/Buoy)
 - `msys2-argv-fix` <kbd>scoop</kbd> [zetaloop/msys2-argv-fix](https://github.com/zetaloop/msys2-argv-fix)

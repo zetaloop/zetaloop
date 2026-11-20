@@ -6,6 +6,7 @@
   outputs =
     { nixpkgs, ... }:
     {
+      nixosModules.overcast = import ./modules/overcast.nix;
       packages =
         nixpkgs.lib.genAttrs
           [
@@ -44,6 +45,7 @@
                 freedomharbor = pkgs.callPackage ./pkgs/freedomharbor.nix { };
                 ilspy = pkgs.callPackage ./pkgs/ilspy.nix { };
                 ilspycmd = pkgs.callPackage ./pkgs/ilspycmd.nix { };
+                overcast = pkgs.callPackage ./pkgs/overcast.nix { };
                 xray-knife = pkgs.callPackage ./pkgs/xray-knife.nix { };
               };
             in
