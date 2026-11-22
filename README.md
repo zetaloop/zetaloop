@@ -78,6 +78,7 @@ nix registry add zetaloop github:zetaloop/zetaloop</code></pre></summary>
 - `buoy` <kbd>nix</kbd> [zetaloop/Buoy](https://github.com/zetaloop/Buoy)
 - `msys2-argv-fix` <kbd>scoop</kbd> [zetaloop/msys2-argv-fix](https://github.com/zetaloop/msys2-argv-fix)
 - `wt2031support` <kbd>scoop</kbd> [zetaloop/wt2031support](https://github.com/zetaloop/wt2031support)
+- `undowhat` <kbd>scoop</kbd> [zetaloop/UndoWhat](https://github.com/zetaloop/UndoWhat)
 - `git-zh` <kbd>scoop</kbd> [zkl2333/git-for-windows-zh](https://github.com/zkl2333/git-for-windows-zh) for scoop `git`
 - `zsh` <kbd>scoop</kbd> powered by scoop `git`
 - `tmux` <kbd>scoop</kbd> powered by scoop `git`
