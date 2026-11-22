@@ -18,39 +18,48 @@ cask "overcast" do
   depends_on :macos
   container type: :naked
 
-  executable = cask.config.binarydir/"overcast"
-  plist = "/Library/LaunchDaemons/build.loop.overcast.plist"
-  service = "system/build.loop.overcast"
   binary "overcast-#{arch}-apple-darwin", target: "overcast"
 
-  preflight do
-    (staged_path/"overcast-#{arch}-apple-darwin.channel").write(JSON.generate(name: "Homebrew", executable: executable.to_s))
+  preflight_steps do
+    write_file "overcast-{{arch}}-apple-darwin.channel",
+               '{"name":"Homebrew","executable":"{{HOMEBREW_PREFIX}}/bin/overcast"}'
   end
 
-  uninstall_preflight do
-    next unless File.exist?(plist)
-
-    program = system_command "/usr/bin/plutil", args: ["-extract", "ProgramArguments.0", "raw", "-o", "-", plist]
-    next unless program.stdout.chomp == executable.to_s
-
-    definition = system_command "/usr/bin/plutil", args: ["-convert", "xml1", "-o", "-", plist]
-    status = system_command "/bin/launchctl", args: ["print", service], must_succeed: false, print_stderr: false
-    if status.success?
-      system_command "/bin/launchctl", args: ["bootout", "--wait", service], sudo: true
-    elsif status.exit_status != 113
-      raise status.stderr
+  postflight_steps do
+    if_path_exists "overcast.plist", base: :temp do
+      run "/bin/sh", args: ["-eu", "-c", <<~SH, "overcast", "{{temp}}", "{{HOMEBREW_PREFIX}}/bin/overcast"],
+        plist=/Library/LaunchDaemons/build.loop.overcast.plist
+        test ! -e "$plist"
+        dir=$(/usr/bin/mktemp -d /Library/LaunchDaemons/.overcast.XXXXXXXX)
+        trap '/bin/rm -f "$dir/original"; /bin/rmdir "$dir"' EXIT
+        /bin/mv "$1/overcast.plist" "$dir/original"
+        test ! -L "$dir/original" && test -f "$dir/original" || exit 1
+        case "$(/usr/bin/stat -f '%u:%Lp' "$dir/original")" in 0:644|0:600|0:640) ;; *) exit 1 ;; esac
+        test "$(/usr/bin/plutil -extract Label raw -o - "$dir/original")" = build.loop.overcast
+        test "$(/usr/bin/plutil -extract ProgramArguments.0 raw -o - "$dir/original")" = "$2"
+        /bin/ln "$dir/original" "$plist"
+        if test -d "$1/loaded"; then /bin/launchctl bootstrap system "$plist"; fi
+      SH
+                     sudo: true
     end
-    system_command "/bin/rm", args: [plist], sudo: true
-    # Homebrew upgrades run the old uninstall and new install in the same process.
-    Thread.current[:overcast_launchd] = [definition.stdout, status.success?]
   end
 
-  postflight do
-    next unless (previous = Thread.current[:overcast_launchd])
-
-    definition, loaded = previous
-    system_command "/usr/bin/plutil", args: ["-convert", "binary1", "-o", plist, "-"], input: definition, sudo: true
-    system_command "/bin/launchctl", args: ["bootstrap", "system", plist], sudo: true if loaded
-    Thread.current[:overcast_launchd] = nil
+  uninstall_preflight_steps do
+    if_path_exists "/Library/LaunchDaemons/build.loop.overcast.plist" do
+      run "/bin/sh", args: ["-eu", "-c", <<~SH, "overcast", "{{temp}}", "{{HOMEBREW_PREFIX}}/bin/overcast"],
+        plist=/Library/LaunchDaemons/build.loop.overcast.plist
+        program=$(/usr/bin/plutil -extract ProgramArguments.0 raw -o - "$plist")
+        test "$program" = "$2" || exit 0
+        if /bin/launchctl print system/build.loop.overcast >/dev/null; then
+          /bin/launchctl bootout --wait system/build.loop.overcast
+          /bin/mkdir "$1/loaded"
+        else
+          status=$?
+          test "$status" -eq 113 || exit "$status"
+        fi
+        /bin/mv -h "$plist" "$1/overcast.plist"
+      SH
+                     sudo: true
+    end
   end
 end
