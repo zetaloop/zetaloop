@@ -1,12 +1,12 @@
 {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Shows what Explorer just undid or redid.",
     "homepage": "https://github.com/zetaloop/UndoWhat",
     "license": "Unlicense",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zetaloop/UndoWhat/releases/download/v0.1.0/undowhat-x64.zip",
-            "hash": "4ee9e3fb854004b71ff77625981030c317b3b5efec26bfd7923c6fac644a2f58"
+            "url": "https://github.com/zetaloop/UndoWhat/releases/download/v0.1.1/undowhat-x64.zip",
+            "hash": "e6c103a2151d810852f4aedbf7085ea8ed06315530946778a0461683de8908ef"
         }
     },
     "post_install": [
