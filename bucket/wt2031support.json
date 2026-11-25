@@ -1,12 +1,12 @@
 {
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Forcing DECSET 2031 support into Windows Terminal.",
     "homepage": "https://github.com/zetaloop/wt2031support",
     "license": "Unlicense",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zetaloop/wt2031support/releases/download/v0.2.0/wt2031support-x64.zip",
-            "hash": "3f59800650cdfdf612fcd562eab2ac600f02deffb51cf1e144eecfcd0413f3cd"
+            "url": "https://github.com/zetaloop/wt2031support/releases/download/v0.2.1/wt2031support-x64.zip",
+            "hash": "d3dfb79209a4c8b0f6c742b76dc99191e35fa78de9f84084db72ba4eab0c6272"
         }
     },
     "bin": [
