@@ -25,10 +25,10 @@
     "pre_uninstall": [
         "$service = Get-CimInstance Win32_Service -Filter \"Name = 'overcast'\"",
         "$entry = (Get-Content -Raw -LiteralPath \"$dir\\overcast.channel\" | ConvertFrom-Json).executable",
-        "if ($service -and $service.PathName -match ('^(?:\"{0}\"|{0})\\s+--run\\s' -f [regex]::Escape($entry))) {",
+        "if ($service -and $service.PathName -match ('^(?:\"{0}\"|{0})\\s+--run(?:\\s|$)' -f [regex]::Escape($entry))) {",
         "    if ($service.State -ne 'Stopped') {",
         "        Stop-Service overcast -ErrorAction Stop",
-        "        if ($cmd -eq 'update') { $env:SCOOP_OVERCAST_RESTART = Split-Path $entry }",
+        "        if ($cmd -eq 'update' -and $service.State -in 'Running', 'Start Pending') { $env:SCOOP_OVERCAST_RESTART = Split-Path $entry }",
         "    }",
         "    if ($cmd -eq 'uninstall') {",
         "        sc.exe delete overcast",

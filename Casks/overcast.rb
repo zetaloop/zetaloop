@@ -31,16 +31,17 @@ cask "overcast" do
         plist=/Library/LaunchDaemons/build.loop.overcast.plist
         test ! -e "$plist"
         dir=$(/usr/bin/mktemp -d /Library/LaunchDaemons/.overcast.XXXXXXXX)
-        trap '/bin/rm -f "$dir/original"; /bin/rmdir "$dir"' EXIT
+        trap '/bin/rmdir "$dir" 2>/dev/null || printf "Service definition retained at %s/original\\n" "$dir" >&2' EXIT
         /bin/mv "$1/overcast.plist" "$dir/original"
         test ! -L "$dir/original" && test -f "$dir/original" || exit 1
         case "$(/usr/bin/stat -f '%u:%Lp' "$dir/original")" in 0:644|0:600|0:640) ;; *) exit 1 ;; esac
         test "$(/usr/bin/plutil -extract Label raw -o - "$dir/original")" = build.loop.overcast
         test "$(/usr/bin/plutil -extract ProgramArguments.0 raw -o - "$dir/original")" = "$2"
-        /bin/ln "$dir/original" "$plist"
+        /bin/mv -n "$dir/original" "$plist"
+        test ! -e "$dir/original"
         if test -d "$1/loaded"; then /bin/launchctl bootstrap system "$plist"; fi
       SH
-                     sudo: true
+                     sudo: true, writable_paths: ["/Library/LaunchDaemons"]
     end
   end
 
@@ -50,16 +51,16 @@ cask "overcast" do
         plist=/Library/LaunchDaemons/build.loop.overcast.plist
         program=$(/usr/bin/plutil -extract ProgramArguments.0 raw -o - "$plist")
         test "$program" = "$2" || exit 0
-        if /bin/launchctl print system/build.loop.overcast >/dev/null; then
+        if job=$(/bin/launchctl print system/build.loop.overcast); then
           /bin/launchctl bootout --wait system/build.loop.overcast
-          /bin/mkdir "$1/loaded"
+          if printf '%s\\n' "$job" | /usr/bin/grep -qx '[[:blank:]]state = running'; then /bin/mkdir "$1/loaded"; fi
         else
           status=$?
           test "$status" -eq 113 || exit "$status"
         fi
         /bin/mv -h "$plist" "$1/overcast.plist"
       SH
-                     sudo: true
+                     sudo: true, writable_paths: ["/Library/LaunchDaemons"]
     end
   end
 end
