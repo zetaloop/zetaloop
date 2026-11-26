@@ -1,9 +1,9 @@
 cask "overcast" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.1.0"
-  sha256 arm:   "d0f53ccffed045e9e0b85d67a1fa0bf6bc7355bc2b4d36e9d36504e8031b8344",
-         intel: "87173270430c272824df59b7cd0c5d89a7faf07ae28eee287f1aa48cb664f858"
+  version "0.2.0"
+  sha256 arm:   "7ab24cb5f19d854eb9c63e350884ef6b865feacd87fb1572521ac8857f3a1db1",
+         intel: "9a0a4925d6cfc889be8b175cf318bd85aecff09bbec8dbaf3d93e842f38fb78c"
 
   url "https://github.com/zetaloop/overcast/releases/download/v#{version}/overcast-#{arch}-apple-darwin"
   name "Overcast"
