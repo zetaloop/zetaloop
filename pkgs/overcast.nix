@@ -8,19 +8,20 @@
 }:
 
 let
-  version = "0.1.0";
+  version = "0.2.0";
   sources =
     lib.mapAttrs
       (
         system: hash:
         fetchurl {
+          inherit version;
           url = "https://github.com/zetaloop/overcast/releases/download/v${version}/overcast-${lib.removeSuffix "-linux" system}-unknown-linux-musl";
           inherit hash;
         }
       )
       {
-        x86_64-linux = "sha256-0LYZ94HbB/IPmHfoWx0nE99JSAr4zvE+yfGLMFs94p8=";
-        aarch64-linux = "sha256-uCdjG/y2q1xiAO8wNYZOFC0a0VNCIluLK8wNc1vjIwM=";
+        x86_64-linux = "sha256-LyLFQSrcGv2BDjc6a3ib066ldmt4x7irxV1tk1WuLA8=";
+        aarch64-linux = "sha256-KkP7iCmkEi0ohTA5khXAfhJAUnJmI+3lt4HV/hAdMNA=";
       };
 in
 stdenvNoCC.mkDerivation {
