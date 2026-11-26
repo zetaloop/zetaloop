@@ -1,16 +1,16 @@
 {
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Proxy orchestration across Xray, sing-box, and Mihomo",
     "homepage": "https://github.com/zetaloop/overcast",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zetaloop/overcast/releases/download/v0.1.0/overcast-x86_64-pc-windows-msvc.exe#/overcast.exe",
-            "hash": "551c0a4e80021231f9c99e3026c0183ec3dc21976e6442cb6e7dccf7450c6e2c"
+            "url": "https://github.com/zetaloop/overcast/releases/download/v0.2.0/overcast-x86_64-pc-windows-msvc.exe#/overcast.exe",
+            "hash": "c5f65a5e0b574c8106aafd28a1a39de02210f1360036e135ec6a63912894ac66"
         },
         "arm64": {
-            "url": "https://github.com/zetaloop/overcast/releases/download/v0.1.0/overcast-aarch64-pc-windows-msvc.exe#/overcast.exe",
-            "hash": "3e95e957ee9002395c53453e0e1c5abd6186b73c37d5626c9defe1fc05ea50f0"
+            "url": "https://github.com/zetaloop/overcast/releases/download/v0.2.0/overcast-aarch64-pc-windows-msvc.exe#/overcast.exe",
+            "hash": "c965c0697a64861658e5c00e039362ed968fa0abd1f844100d6e3068397afce1"
         }
     },
     "bin": "overcast.exe",
