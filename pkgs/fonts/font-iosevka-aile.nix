@@ -5,14 +5,14 @@
 }:
 
 let
-  version = "34.9.1";
+  version = "34.9.2";
 in
 mkFont {
   pname = "font-iosevka-aile";
   inherit version;
   src = fetchurl {
     url = "https://github.com/be5invis/Iosevka/releases/download/v${version}/SuperTTC-IosevkaAile-${version}.zip";
-    hash = "sha256-I+KF3Qli6ie31xGF/ncARjyGGqnvETU7w9IAq4dk1d0=";
+    hash = "sha256-9neuzh+E8Fn35IlnroQuRJzwL0YRGI5DOU0bIeYju6w=";
   };
 
   meta = {
