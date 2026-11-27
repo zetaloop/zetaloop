@@ -5,14 +5,14 @@
 }:
 
 let
-  version = "34.9.1";
+  version = "34.9.2";
 in
 mkFont {
   pname = "font-iosevka-sgr-slab";
   inherit version;
   src = fetchurl {
     url = "https://github.com/be5invis/Iosevka/releases/download/v${version}/SuperTTC-SGr-IosevkaSlab-${version}.zip";
-    hash = "sha256-rK5jLAVXMiVdWXz49CSMWzC8Dw00VAXuyLysRI8ENc0=";
+    hash = "sha256-4NshJXumpd4NyJ45VKYI1hQk9Kats7m44z/jySLYGuQ=";
   };
 
   meta = {
