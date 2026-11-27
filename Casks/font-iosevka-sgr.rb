@@ -1,6 +1,6 @@
 cask "font-iosevka-sgr" do
-  version "34.9.1"
-  sha256 "26cca021ea646d2610ccb4d22fbe629939fc391ba8757999d70234ba09d17b24"
+  version "34.9.2"
+  sha256 "4f5eaf3a1bdfa4fe49debb41ba754cb17a302846b43ba27ec118963cf41b1460"
 
   url "https://github.com/be5invis/Iosevka/releases/download/v#{version}/SuperTTC-SGr-Iosevka-#{version}.zip"
   name "SGr Iosevka"
