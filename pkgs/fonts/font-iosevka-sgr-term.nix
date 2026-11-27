@@ -5,14 +5,14 @@
 }:
 
 let
-  version = "34.9.1";
+  version = "34.9.2";
 in
 mkFont {
   pname = "font-iosevka-sgr-term";
   inherit version;
   src = fetchurl {
     url = "https://github.com/be5invis/Iosevka/releases/download/v${version}/SuperTTC-SGr-IosevkaTerm-${version}.zip";
-    hash = "sha256-u0A2v5aFcWU8AvbEZisZcEhSla2Y10bHQXNKMruBXJw=";
+    hash = "sha256-55rjZ+mThGDjGFK2a+rYyqIH+5GmdVshU3OA1Gihcg8=";
   };
 
   meta = {
