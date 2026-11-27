@@ -1,6 +1,6 @@
 cask "font-iosevka-sgr-term-slab" do
-  version "34.9.1"
-  sha256 "9d1a93b0af0456220de583687c16ff3b9e8498928e48bda39e383578d137e044"
+  version "34.9.2"
+  sha256 "febc775dbea630e41139726041e3dcf97ad8dc63a95df7354471e28d50dd0dac"
 
   url "https://github.com/be5invis/Iosevka/releases/download/v#{version}/SuperTTC-SGr-IosevkaTermSlab-#{version}.zip"
   name "SGr Iosevka Term Slab"
